@@ -1,4 +1,14 @@
 extend layout
 
 block content
-  h1= title
+  h1
+    a(href="/")= title
+
+  h2= subtitle
+
+  h3 Current token #{token}
+
+  section
+    ol
+      for service in services
+        li= service.title

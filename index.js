@@ -1,6 +1,13 @@
+'use strict';
+
 var Hapi = require('hapi');
 var Joi = require('joi');
 var nconf = require('nconf');
+var RevisitToken = require('revisit-token');
+var rvToken = new RevisitToken({
+  db: './db/tokens',
+  ttl: 10000
+});
 
 nconf.argv().env().file({ file: 'local.json' });
 
@@ -23,17 +30,19 @@ var routes = [
     method: 'GET',
     path: '/',
     config: {
-      handler: getServices,
+      handler: getServices
+      /*
       validate: {
         query: {
           name: Joi.string()
         }
       }
+      */
     }
   },
   {
     method: 'POST',
-    path: '/message',
+    path: '/service/:id',
     config: {
       handler: sendToService
     }
@@ -57,9 +66,18 @@ server.route({
 server.start();
 
 function getServices(request, reply) {
-  reply.view('index', {
-    title: 'revisit.link.hub',
-    message: 'test'
+  rvToken.generate(function (err, token) {
+    if (err) {
+      throw err;
+      return;
+    }
+
+    reply.view('index', {
+      title: 'revisit.link.hub',
+      subtitle: 'Available Services',
+      services: [],
+      token: token
+    });
   });
 }
 
