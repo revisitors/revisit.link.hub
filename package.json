@@ -1,0 +1,29 @@
+{
+  "name": "revisit.link.hub",
+  "version": "1.0.0",
+  "description": "Central hub for revisit.link services",
+  "private": true,
+  "engines": {
+    "node": "~0.10.x",
+    "npm": "1.3.x"
+  },
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "hapi": "~6.4.0",
+    "nconf": "~0.6.9",
+    "jade": "~1.5.0",
+    "joi": "~4.6.2",
+    "revisit-token": "~1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "~1.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ednapiranha/revisit.link.hub.git"
+  },
+  "author": "Edna Piranha <jen@ednapiranha.com> (http://ednapiranha.com)",
+  "license": "BSD"
+}
