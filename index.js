@@ -31,13 +31,6 @@ var routes = [
     path: '/',
     config: {
       handler: getServices
-      /*
-      validate: {
-        query: {
-          name: Joi.string()
-        }
-      }
-      */
     }
   },
   {
@@ -45,6 +38,13 @@ var routes = [
     path: '/service/:id',
     config: {
       handler: sendToService
+      /*
+      validate: {
+        query: {
+          name: Joi.string()
+        }
+      }
+      */
     }
   }
 ];

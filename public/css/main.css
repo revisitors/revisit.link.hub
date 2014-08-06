@@ -70,6 +70,16 @@ h2 {
     text-shadow: #00bfe8 10px 2px 0;
 }
 
+h3.token {
+    color: #ddd;
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+h3.token pre {
+    display: inline;
+}
+
 section {
     background-color: rgba(255, 255, 255, 0.35);
     border-radius: 2px;
@@ -82,7 +92,10 @@ section > * {
     font-weight: 100;
 }
 
-section p, section li {
+s
+
+h   display: inline;3.token pre {
+}ection p, section li {
     color: #666;
     font-size: 1.1rem;
     line-height: 1.8rem;
