@@ -4,12 +4,15 @@ block content
   h1
     a(href="/")= title
 
-  h2= subtitle
+  h2 current token 
+  p.token #{token}
 
-  h3.token Current token 
-    pre #{token}
+  h2= subtitle
 
   section
     ol
       for service in services
-        li= service.title
+        li
+          span(class="status online-#{service.online}")
+          span= service.url
+          p.description= service.description
