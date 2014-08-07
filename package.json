@@ -15,6 +15,7 @@
     "nconf": "~0.6.9",
     "jade": "~1.5.0",
     "joi": "~4.6.2",
+    "request": "~2.40.0",
     "revisit-token": "~1.0.0"
   },
   "devDependencies": {
