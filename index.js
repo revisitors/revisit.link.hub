@@ -13,6 +13,7 @@ var options = {
     engines: {
       jade: require('jade')
     },
+    isCached: process.env.node === 'production',
     path: __dirname + '/views',
     compileOptions: {
       pretty: true
