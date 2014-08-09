@@ -16,7 +16,8 @@
     "jade": "~1.5.0",
     "joi": "~4.6.2",
     "request": "~2.40.0",
-    "revisit-token": "~1.0.0"
+    "revisit-token": "~1.0.0",
+    "revisit-tether": "~1.0.0"
   },
   "devDependencies": {
     "nodemon": "~1.2.1"
