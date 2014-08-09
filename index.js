@@ -33,7 +33,7 @@ var routes = [
   },
   {
     method: 'POST',
-    path: '/service/:id',
+    path: '/service/{id}',
     config: {
       handler: services.send
       /*
