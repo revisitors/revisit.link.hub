@@ -21,7 +21,7 @@ var options = {
   }
 };
 
-var server = Hapi.createServer(nconf.get('domain'), nconf.get('authPort'), options);
+var server = Hapi.createServer(nconf.get('domain'), nconf.get('port'), options);
 
 var routes = [
   {
