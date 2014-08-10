@@ -10,6 +10,7 @@ block content
     ol
       for service in services
         li
+          span(class="status online-#{service.online}") &#9733;
           span= service.url
           p.description= service.description
     form(method='post', action='/service')
