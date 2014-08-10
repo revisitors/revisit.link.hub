@@ -23,5 +23,6 @@ $(function() {
     services = [];
     servicesAdd.empty();
     servicesEl.val('');
+    $('.content').val('');
   });
 });

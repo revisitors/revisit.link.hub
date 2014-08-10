@@ -18,9 +18,9 @@ block content
           p.description= service.description
     form(method='post', action='/service')
       input(type='hidden', name='token', value='#{token}')
-      input(type='text', id='services', name='services', value='')
-      input(type='text', name='content', value='hello world')
+      input(type='hidden', id='services', name='services', value='')
+      input(type='text', name='content', class="content", placeholder='what text should we start with?')
       button(type='button', class='button reset') &#8667;
         span Reset
-      button(type='submit', class='button') &#8667;
+      button(type='submit', class='button', id='create') &#8667;
         span Create!

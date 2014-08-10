@@ -238,6 +238,22 @@ a {
   font-style: italic;
 }
 
+.content {
+  border: 2px dashed #555;
+  clear: both;
+  color: #2ececc;
+  display: block;
+  font-family: Arial, sans-serif;
+  font-size: 1.8rem;
+  margin: 10px 0;
+  padding: 5px;
+  width: 90%;
+}
+
+#create.on {
+  display: inline;
+}
+
 .result {
   font-size: 2.6rem;
   margin: 20px 0;
