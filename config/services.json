@@ -1,14 +1,6 @@
 [
   {
-    "url": "http://localhost:8000",
-    "description": "Sends text messages"
-  },
-  {
-    "url": "http://localhost:8000",
-    "description": "Sends text messages"
-  },
-  {
-    "url": "http://localh:8000",
-    "description": "Sends text messages"
+    "url": "http://service-relay.revisit.link",
+    "description": "makes a text message fancier"
   }
 ]
