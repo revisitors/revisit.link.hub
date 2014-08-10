@@ -7,11 +7,10 @@ block content
     ol
       for service in services
         li
-          span(class="status online-#{service.online}")
-          span= service.url
+          span= service
 
     if result
-      div= result
+      div.result= result
 
     h3
       a(href='/#{token}/play', class='button') &#8667;

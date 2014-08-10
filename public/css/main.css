@@ -83,6 +83,14 @@ header > div {
 }
 
 .button {
+  float: right;
+}
+
+.button.reset {
+  float: left;
+}
+
+.button {
   border: 0;
   color: #444;
   cursor: pointer;
@@ -172,6 +180,14 @@ section li {
   padding: 5px 10px;
 }
 
+section li.online {
+  cursor: pointer;
+}
+
+section li.online:hover {
+  background-color: #a1edec;
+}
+
 section li span:last-child {
   line-height: 0.6rem;
 }
@@ -185,6 +201,19 @@ section h3 {
 a {
     color: #15acba;
     text-decoration: none;
+}
+
+.max-limit {
+  margin: 5px 0 20px 0;
+}
+
+.max-limit.on {
+  color: #f00;
+}
+
+.services-added {
+  font-size: 0.8rem;
+  margin: 20px 0;
 }
 
 .status {
@@ -207,6 +236,11 @@ a {
   color: #888;
   font-size: 1.2rem;
   font-style: italic;
+}
+
+.result {
+  font-size: 2.6rem;
+  margin: 20px 0;
 }
 
 footer p {

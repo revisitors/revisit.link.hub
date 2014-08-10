@@ -7,15 +7,20 @@ block content
   h2= subtitle
 
   section
+    p.max-limit You can only add a maximum of 4 services to a script.
+    p.services-added
+
     ol
       for service in services
-        li
+        li(class=service.online? 'online' : '')
           span(class="status online-#{service.online}") &#9733;
-          span= service.url
+          span.url= service.url
           p.description= service.description
     form(method='post', action='/service')
-      input(type='text', name='token', value='#{token}')
-      input(type='text', name='services', value='http://localhost:8000')
+      input(type='hidden', name='token', value='#{token}')
+      input(type='text', id='services', name='services', value='')
       input(type='text', name='content', value='hello world')
+      button(type='button', class='button reset') &#8667;
+        span Reset
       button(type='submit', class='button') &#8667;
         span Create!
