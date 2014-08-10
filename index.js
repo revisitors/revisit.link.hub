@@ -32,17 +32,24 @@ var routes = [
     }
   },
   {
-    method: 'POST',
-    path: '/service/{id}',
+    method: 'GET',
+    path: '/{token}',
     config: {
-      handler: services.send
-      /*
-      validate: {
-        query: {
-          name: Joi.string()
-        }
-      }
-      */
+      handler: services.getServices
+    }
+  },
+  {
+    method: 'POST',
+    path: '/service',
+    config: {
+      handler: services.add
+    }
+  },
+  {
+    method: 'GET',
+    path: '/{token}/play',
+    config: {
+      handler: services.play
     }
   }
 ];

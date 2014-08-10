@@ -7,4 +7,12 @@ html
     link(rel='stylesheet', href='/css/main.css')
 
   body
-    block content
+    header
+      div
+        h1
+          a(href="/")= title
+            span !
+        h2 An API playground.
+
+    .wrapper
+      block content

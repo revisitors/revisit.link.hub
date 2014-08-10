@@ -1,0 +1,18 @@
+extend layout
+
+block content
+  h2 Script for #{token}
+
+  section
+    ol
+      for service in services
+        li
+          span(class="status online-#{service.online}")
+          span= service.url
+
+    if result
+      div= result
+
+    h3
+      a(href='/#{token}/play', class='button') &#8667;
+        span Play!

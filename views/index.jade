@@ -1,10 +1,7 @@
 extend layout
 
 block content
-  h1
-    a(href="/")= title
-
-  h2 current token 
+  h2 current token
   p.token #{token}
 
   h2= subtitle
@@ -13,6 +10,11 @@ block content
     ol
       for service in services
         li
-          span(class="status online-#{service.online}")
           span= service.url
           p.description= service.description
+    form(method='post', action='/service')
+      input(type='text', name='token', value='#{token}')
+      input(type='text', name='services', value='http://localhost:8000')
+      input(type='text', name='content', value='hello world')
+      button(type='submit', class='button') &#8667;
+        span Create!

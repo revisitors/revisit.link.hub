@@ -1,10 +1,14 @@
 [
   {
-    "url": "http://chat.meatspac.es",
-    "description": "Sends chats with animated GIFs"
+    "url": "http://localhost:8000",
+    "description": "Sends text messages"
   },
   {
-    "url": "http://sfasfss.com",
-    "description": "Some service that isn't valid"
+    "url": "http://localhost:8000",
+    "description": "Sends text messages"
+  },
+  {
+    "url": "http://localh:8000",
+    "description": "Sends text messages"
   }
 ]

@@ -55,13 +55,51 @@ table {
 }
 
 body {
-    background-color: #eee;
+    background-color: #f1f1f1;
     color: #555;
     font-family: Arial, sans-serif;
-    padding: 20px;
 }
 
-h1, h2 {
+*::selection {
+  background: #666;
+  color: #eee;
+}
+
+*::-moz-selection {
+  background: #666;
+  color: #eee;
+}
+
+header {
+    background-color: #333;
+    width: 100%;
+}
+
+header > div {
+    padding: 10px 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    position: relative;
+}
+
+.button {
+  border: 0;
+  color: #444;
+  cursor: pointer;
+  font-size: 2.8rem;
+  margin-top: 20px;
+}
+
+.button:hover {
+  color: #1ae09d;
+}
+
+.button span {
+  font-size: 2.2rem;
+  padding-left: 10px;
+}
+
+h1, h2, h3, button {
   font-family: NeoRetroDraw;
   font-weight: 100;
 }
@@ -71,26 +109,46 @@ h1 {
     margin: 0 0 20px;
 }
 
+h1 a span {
+    display: none;
+}
+
 h1 a {
-    color: #444;
+    color: #aaa;
+}
+
+h1 a:hover {
+    color: #1ae09d;
+}
+
+h1 a:hover span {
+    display: inline;
 }
 
 h2 {
-    color: #444;
-    font-size: 1.9rem;
+    color: #888;
+    font-size: 1.7rem;
     margin: 30px 0 10px 0;
 }
 
+.wrapper {
+  margin: 0 auto;
+  max-width: 800px;
+  position: relative;
+}
+
 .token {
-  font-size: 1.3rem;
+  color: #1ae09d;
+  display: inline;
+  font-size: 1.2rem;
+  padding: 5px;
 }
 
 section {
-    background-color: rgba(255, 255, 255, 0.45);
     border-radius: 2px;
-    margin: 30px 0;
+    margin: 10px 0;
     max-width: 900px;
-    padding: 10px;
+    padding: 10px 0;
 }
 
 section > * {
@@ -103,8 +161,15 @@ section p, section li {
     line-height: 2rem;
 }
 
+section li:first-child {
+  border: 2px dashed #fff;
+}
+
 section li {
-  margin-bottom: 20px;
+  border-bottom: 2px dashed #fff;
+  border-left: 2px dashed #fff;
+  border-right: 2px dashed #fff;
+  padding: 5px 10px;
 }
 
 section li span:last-child {
@@ -125,17 +190,17 @@ a {
 .status {
   display: inline-block;
   float: left;
-  height: 30px;
+  font-size: 3rem;
+  margin-top: -5px;
   margin-right: 20px;
-  width: 30px;
 }
 
 .online-true {
-  background-color: #26cc7c;
+  color: #26cc7c;
 }
 
 .online-false {
-  background-color: #e14a4a;
+  color: #e14a4a;
 }
 
 .description {
