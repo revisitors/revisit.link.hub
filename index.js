@@ -32,13 +32,6 @@ var routes = [
     }
   },
   {
-    method: 'GET',
-    path: '/{token}',
-    config: {
-      handler: services.getServices
-    }
-  },
-  {
     method: 'POST',
     path: '/service',
     config: {
