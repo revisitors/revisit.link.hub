@@ -16,10 +16,10 @@ block content
           span(class="status online-#{service.online}") &#9733;
           span.url= service.url
           p.description= service.description
-    form(method='post', action='/service')
+    form(method='post', action='/service', enctype='multipart/form-data')
       input(type='hidden', name='token', value='#{token}')
       input(type='hidden', id='services', name='services', value='')
-      input(type='text', name='content', class="content", placeholder='what text should we start with?')
+      input(type='file', name='content', class='content')
       button(type='button', class='button reset') &#8667;
         span Reset
       button(type='submit', class='button', id='create') &#8667;

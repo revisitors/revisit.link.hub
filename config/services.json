@@ -2,5 +2,9 @@
   {
     "url": "http://service-relay.revisit.link",
     "description": "makes a text message fancier"
+  },
+  {
+    "url": "http://localhost:8000",
+    "description": "blah"
   }
 ]

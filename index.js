@@ -35,6 +35,9 @@ var routes = [
     method: 'POST',
     path: '/service',
     config: {
+      payload: {
+        maxBytes: 2000000
+      },
       handler: services.add
     }
   },
