@@ -1,28 +1,32 @@
-$(function() {
-  var services = [];
-  var servicesEl = $('#services');
-  var servicesAdd = $('.services-added');
-  var maxLimit = $('.max-limit');
+var $ = require('jquery');
+var services = [];
+var servicesEl = $('#services');
+var servicesAdd = $('.services-added');
+var maxLimit = $('.max-limit');
+var ImageView = require('imageview');
+var iv = new ImageView();
 
-  $('.online').click(function () {
-    if (services.length < 4) {
-      services.push($(this).find('.url').text());
+iv.preview();
 
-      servicesAdd.text(services.join(' => '));
-      servicesEl.val(services.join(','));
-    } else {
-      maxLimit.addClass('on');
+$('.online').click(function () {
+  if (services.length < 4) {
+    services.push($(this).find('.url').text());
 
-      setTimeout(function () {
-        maxLimit.removeClass('on');
-      }, 2500);
-    }
-  });
+    servicesAdd.text(services.join(' => '));
+    servicesEl.val(services.join(','));
+  } else {
+    maxLimit.addClass('on');
 
-  $('.reset').click(function () {
-    services = [];
-    servicesAdd.empty();
-    servicesEl.val('');
-    $('.content').val('');
-  });
+    setTimeout(function () {
+      maxLimit.removeClass('on');
+    }, 2500);
+  }
+});
+
+$('.reset').click(function () {
+  services = [];
+  servicesAdd.empty();
+  servicesEl.val('');
+  $('#preview').empty();
+  $('.content, #photo').val('');
 });

@@ -10,7 +10,8 @@ block content
           span= service
 
     if result
-      div.result= result
+      div.result
+        img(src='#{result}')
 
     h3
       a(href='/#{token}/play', class='button') &#8667;

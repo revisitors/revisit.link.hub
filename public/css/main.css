@@ -250,6 +250,10 @@ a {
   width: 90%;
 }
 
+#photo {
+  visibility: hidden;
+}
+
 #create.on {
   display: inline;
 }

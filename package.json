@@ -18,7 +18,12 @@
     "request": "~2.40.0",
     "revisit-token": "~1.0.0",
     "revisit-tether": "~1.0.6",
-    "mmmagic": "~0.3.8"
+    "mmmagic": "~0.3.8",
+    "imageview": "~0.0.5",
+    "browserify": "~5.9.3",
+    "jquery": "~2.1.1",
+    "data-uri-to-buffer": "~0.0.3",
+    "json-buffer": "~2.0.9"
   },
   "devDependencies": {
     "nodemon": "~1.2.1"

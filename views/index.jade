@@ -7,7 +7,7 @@ block content
   h2= subtitle
 
   section
-    p.max-limit You can only add a maximum of 4 services to a script.
+    p#max-limit You can only add a maximum of 4 services to a script.
     p.services-added
 
     ol
@@ -16,11 +16,15 @@ block content
           span(class="status online-#{service.online}") &#9733;
           span.url= service.url
           p.description= service.description
-    form(method='post', action='/service', enctype='multipart/form-data')
+    form(method='post', action='/service')
+      #preview
       input(type='hidden', name='token', value='#{token}')
       input(type='hidden', id='services', name='services', value='')
-      input(type='file', name='content', class='content')
-      button(type='button', class='button reset') &#8667;
+      input(type='file', id='photo-picker', class='content')
+      textarea(name='content', id='photo')
+      button(type='button', class='button reset', id='reset') &#8667;
         span Reset
       button(type='submit', class='button', id='create') &#8667;
         span Create!
+
+  script(type='text/javascript', src='/js/bundle.js')
