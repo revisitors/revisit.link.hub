@@ -4,7 +4,10 @@ var servicesEl = $('#services');
 var servicesAdd = $('.services-added');
 var maxLimit = $('.max-limit');
 var ImageView = require('imageview');
-var iv = new ImageView();
+var iv = new ImageView({
+  quality: 0.5,
+  maxSize: 300
+});
 
 iv.preview();
 
