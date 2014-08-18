@@ -1,6 +1,10 @@
 [
   {
     "url": "http://service-relay.revisit.link",
-    "description": "laplacian and contrast"
+    "description": "laplacian -> contrast"
+  },
+  {
+    "url": "http://meatcub.es:8000",
+    "description": "glitch?!"
   }
 ]
