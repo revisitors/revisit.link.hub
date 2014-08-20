@@ -149,14 +149,14 @@ h2 {
   color: #1ae09d;
   display: inline;
   font-size: 1.2rem;
-  padding: 5px;
+  padding: 5px 5px 20px 5px;
 }
 
 section {
     border-radius: 2px;
     margin: 10px 0;
     max-width: 900px;
-    padding: 10px 0;
+    padding: 10px 0 0;
 }
 
 section > * {
@@ -194,8 +194,8 @@ section li span:last-child {
 
 section h3 {
     color: #888;
-    font-size: 1.6rem;
-    margin-bottom: 15px;
+    font-size: 2.2rem;
+    margin: 25px 0 15px;
 }
 
 a {
@@ -261,6 +261,10 @@ a {
 .result {
   font-size: 2.6rem;
   margin: 20px 0;
+}
+
+.repository {
+  font-size: 1rem;
 }
 
 footer p {

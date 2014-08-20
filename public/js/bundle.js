@@ -42,7 +42,7 @@ var ImageView = function (options) {
       }
 
       canvas.getContext('2d').drawImage(img, 0, 0, canvas.width, canvas.height);
-      picField.value = canvas.toDataURL('image/jpeg', quality);
+      picField.value = canvas.toDataURL('image/gif', quality);
       preview.appendChild(canvas);
 
       if (next) {

@@ -26,7 +26,7 @@ $('.online').click(function () {
   }
 });
 
-$('.reset').click(function () {
+$('#reset').click(function () {
   services = [];
   servicesAdd.empty();
   servicesEl.val('');
