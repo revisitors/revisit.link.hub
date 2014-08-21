@@ -5,13 +5,8 @@
     "repository": "https://github.com/revisitors/revisit.service.relay"
   },
   {
-    "url": "http://glitch.meatcub.es",
+    "url": "http://meatcub.es:8000",
     "description": "glitch!",
     "repository": "https://github.com/kid-icarus/glitch-api"
-  },
-  {
-    "url": "http://localhost:8000",
-    "description": "local",
-    "repository": ""
   }
 ]
