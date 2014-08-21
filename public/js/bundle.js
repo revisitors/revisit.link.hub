@@ -42,7 +42,7 @@ var ImageView = function (options) {
       }
 
       canvas.getContext('2d').drawImage(img, 0, 0, canvas.width, canvas.height);
-      picField.value = canvas.toDataURL('image/gif', quality);
+      picField.value = canvas.toDataURL('image/jpeg', quality);
       preview.appendChild(canvas);
 
       if (next) {
@@ -9288,7 +9288,7 @@ $('.online').click(function () {
   }
 });
 
-$('.reset').click(function () {
+$('#reset').click(function () {
   services = [];
   servicesAdd.empty();
   servicesEl.val('');
