@@ -1,4 +1,4 @@
-(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 'use strict';
 
 var ImageView = function (options) {
@@ -9266,6 +9266,9 @@ var servicesEl = $('#services');
 var servicesAdd = $('.services-added');
 var maxLimit = $('.max-limit');
 var ImageView = require('imageview');
+var serviceList = $('#service-list');
+var token = $('.token');
+var body = $('body');
 var iv = new ImageView({
   quality: 0.5,
   maxSize: 300
@@ -9273,7 +9276,7 @@ var iv = new ImageView({
 
 iv.preview();
 
-$('.online').click(function () {
+body.on('click', '.online', function () {
   if (services.length < 4) {
     services.push($(this).find('.url').text());
 
@@ -9288,7 +9291,27 @@ $('.online').click(function () {
   }
 });
 
-$('#reset').click(function () {
+$.get('/services', function (data) {
+  token.text(data.token);
+  $('#token').val(data.token);
+
+  data.services.forEach(function (d) {
+    var li = $('<li><span class="status"> &#9733;</span></li>');
+    var url = $('<span class="url"></span>');
+    var description = $('<p class="description"></p>');
+    url.text(d.url);
+    description.text(d.description);
+
+    if (d.online) {
+      li.addClass('online');
+    }
+
+    li.append(url).append(description);
+    serviceList.append(li);
+  });
+});
+
+body.on('click', '#reset', function () {
   services = [];
   servicesAdd.empty();
   servicesEl.val('');
@@ -9296,4 +9319,4 @@ $('#reset').click(function () {
   $('.content, #photo').val('');
 });
 
-},{"imageview":1,"jquery":2}]},{},[3]);
+},{"imageview":1,"jquery":2}]},{},[3])

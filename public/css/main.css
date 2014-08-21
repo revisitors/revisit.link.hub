@@ -217,6 +217,7 @@ a {
 }
 
 .status {
+  color: #e14a4a;
   display: inline-block;
   float: left;
   font-size: 3rem;
@@ -224,12 +225,8 @@ a {
   margin-right: 20px;
 }
 
-.online-true {
+.online .status {
   color: #26cc7c;
-}
-
-.online-false {
-  color: #e14a4a;
 }
 
 .description {

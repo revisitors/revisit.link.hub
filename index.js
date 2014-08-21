@@ -28,6 +28,13 @@ var routes = [
     method: 'GET',
     path: '/',
     config: {
+      handler: services.home
+    }
+  },
+  {
+    method: 'GET',
+    path: '/services',
+    config: {
       handler: services.getAll
     }
   },

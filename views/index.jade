@@ -3,7 +3,7 @@ extend layout
 block content
   section
     h2 current token
-    p.token #{token}
+    p.token
 
   section
     h3 Choose an image
@@ -12,22 +12,15 @@ block content
       input(type='file', id='photo-picker', class='content')
 
   section
-    h3 Choose 1-4 services
+    h3 Click on 1-4 services below
     h2 (you can choose the same one more than once!)
     p.services-added
-    ol
-      for service in services
-        li(class=service.online? 'online' : '')
-          span(class="status online-#{service.online}") &#9733;
-          span.url= service.url
-          p.description= service.description
-          p.repository
-            a(href='#{service.repository}', target='_blank')= service.repository
+    ol#service-list
 
   section
     form(method='post', action='/service')
       textarea(name='content', id='photo')
-      input(type='hidden', name='token', value='#{token}')
+      input(type='hidden', name='token', id="token")
       input(type='hidden', id='services', name='services', value='')
       button(type='button', class='button reset', id='reset') &#8667;
         span Reset
