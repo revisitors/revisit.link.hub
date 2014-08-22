@@ -9,7 +9,7 @@ var token = $('.token');
 var body = $('body');
 var iv = new ImageView({
   quality: 0.5,
-  maxSize: 300
+  maxSize: 600
 });
 
 iv.preview();
