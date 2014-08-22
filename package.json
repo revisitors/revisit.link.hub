@@ -20,7 +20,8 @@
     "revisit-tether": "~2.0.1",
     "imageview": "~0.0.5",
     "browserify": "~5.9.3",
-    "jquery": "~2.1.1"
+    "jquery": "~2.1.1",
+    "crumb": "~3.1.0"
   },
   "devDependencies": {
     "nodemon": "~1.2.1"

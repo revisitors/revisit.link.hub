@@ -19,6 +19,7 @@ block content
 
   section
     form(method='post', action='/service')
+      input(type='hidden', name='crumb', value='#{crumb}')
       textarea(name='content', id='photo')
       input(type='hidden', name='token', id="token")
       input(type='hidden', id='services', name='services', value='')

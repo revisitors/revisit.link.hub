@@ -71,4 +71,12 @@ server.route({
   }
 });
 
+server.pack.register({
+  plugin: require('crumb')
+}, function (err) {
+  if (err) {
+    throw err;
+  }
+});
+
 server.start();
