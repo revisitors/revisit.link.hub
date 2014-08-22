@@ -8,5 +8,10 @@
     "url": "http://meatcub.es:8000",
     "description": "glitch!",
     "repository": "https://github.com/kid-icarus/glitch-api"
+  },
+  {
+    "url": "http://shielded-sands-7191.herokuapp.com/rotate/",
+    "description": "rotate anti-clockwise 90deg",
+    "repository": "https://github.com/justinabrahms/rotate.revisit.link"
   }
 ]
