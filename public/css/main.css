@@ -1,6 +1,6 @@
 /* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
+ v2.0 | 20110126
+ License: none (public domain)
 */
 
 html, body, div, span, applet, object, iframe,
@@ -16,48 +16,48 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-    display: block;
+  display: block;
 }
 body {
-    line-height: 1;
+  line-height: 1;
 }
 ol, ul {
-    list-style: none;
+  list-style: none;
 }
 blockquote, q {
-    quotes: none;
+  quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-    content: '';
-    content: none;
+  content: '';
+  content: none;
 }
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 @font-face {
-    font-family: 'NeoRetroDraw';
-    src: url('../fonts/NEORD___-webfont.woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'MaximumSecurity';
+  src: url('../fonts/MAXIMUMSECURITY.ttf');
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
-    background-color: #f1f1f1;
-    color: #555;
-    font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+  color: #555;
+  font-family: Arial, sans-serif;
 }
 
 *::selection {
@@ -71,15 +71,16 @@ body {
 }
 
 header {
-    background-color: #333;
-    width: 100%;
+  background-color: #333;
+  background-image: url(../images/back.jpg);
+  width: 100%;
 }
 
 header > div {
-    padding: 10px 20px;
-    margin: 0 auto;
-    max-width: 800px;
-    position: relative;
+  padding: 10px 20px;
+  margin: 0 auto;
+  max-width: 800px;
+  position: relative;
 }
 
 .button {
@@ -108,35 +109,37 @@ header > div {
 }
 
 h1, h2, h3, button {
-  font-family: NeoRetroDraw;
-  font-weight: 100;
+  font-family: MaximumSecurity;
 }
 
 h1 {
-    font-size: 2.2rem;
-    margin: 0 0 20px;
+  font-size: 2.8rem;
 }
 
 h1 a span {
-    display: none;
+  display: none;
 }
 
 h1 a {
-    color: #aaa;
+  color: #4ef5ff;
 }
 
 h1 a:hover {
-    color: #1ae09d;
+  color: #1ae09d;
 }
 
 h1 a:hover span {
-    display: inline;
+  display: inline;
+}
+
+header h2 {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 h2 {
-    color: #888;
-    font-size: 1.7rem;
-    margin: 30px 0 10px 0;
+  color: #0ba9c5;
+  font-size: 1.7rem;
+  margin: 10px 0 10px 0;
 }
 
 .wrapper {
@@ -153,10 +156,10 @@ h2 {
 }
 
 section {
-    border-radius: 2px;
-    margin: 10px 0;
-    max-width: 900px;
-    padding: 10px 0 0;
+  border-radius: 2px;
+  margin: 10px 0;
+  max-width: 900px;
+  padding: 10px 0 0;
 }
 
 section > * {
@@ -164,20 +167,20 @@ section > * {
 }
 
 section p, section li {
-    color: #666;
-    font-size: 1.3rem;
-    line-height: 2rem;
+  color: #666;
+  font-size: 1.3rem;
+  line-height: 2rem;
 }
 
 section li:first-child {
-  border: 2px dashed #fff;
+  border: 2px dashed #0ba9c5;
 }
 
 section li {
-  border-bottom: 2px dashed #fff;
-  border-left: 2px dashed #fff;
-  border-right: 2px dashed #fff;
-  min-height: 80px;
+  border-bottom: 2px dashed #0ba9c5;
+  border-left: 2px dashed #0ba9c5;
+  border-right: 2px dashed #0ba9c5;
+  min-height: 70px;
   padding: 5px 10px;
 }
 
@@ -194,14 +197,14 @@ section li span:last-child {
 }
 
 section h3 {
-    color: #888;
-    font-size: 2.2rem;
-    margin: 25px 0 15px;
+  color: #222;
+  font-size: 2.2rem;
+  margin: 25px 0 15px;
 }
 
 a {
-    color: #15acba;
-    text-decoration: none;
+  color: #15acba;
+  text-decoration: none;
 }
 
 .max-limit {
@@ -237,7 +240,7 @@ a {
 }
 
 .content {
-  border: 2px dashed #555;
+  border: 2px dashed #0ba9c5;
   clear: both;
   color: #2ececc;
   display: block;
@@ -271,5 +274,5 @@ a {
 }
 
 footer p {
-    color: #777;
+  color: #777;
 }

@@ -9278,6 +9278,14 @@ var iv = new ImageView({
 
 iv.preview();
 
+var checkValid = function () {
+  if (services.length > 0 && $('#photo').val().length > 0) {
+    create.addClass('on');
+  } else {
+    create.removeClass('on');
+  }
+};
+
 body.on('click', '.online', function () {
   if (services.length < 4) {
     services.push($(this).find('.url').text());
@@ -9292,11 +9300,7 @@ body.on('click', '.online', function () {
     }, 2500);
   }
 
-  if (services.length > 0 && $('#photo').val().length > 0) {
-    create.addClass('on');
-  } else {
-    create.removeClass('on');
-  }
+  checkValid();
 });
 
 $.get('/services', function (data) {
