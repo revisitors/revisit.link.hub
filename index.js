@@ -5,6 +5,7 @@ var Joi = require('joi');
 var nconf = require('nconf');
 
 var services = require('./lib/services');
+var imageStream = require('./lib/image-stream');
 
 nconf.argv().env().file({ file: 'local.json' });
 
@@ -29,6 +30,13 @@ var routes = [
     path: '/',
     config: {
       handler: services.home
+    }
+  },
+  {
+    method: 'GET',
+    path: '/recent',
+    config: {
+      handler: imageStream.getRecent
     }
   },
   {
