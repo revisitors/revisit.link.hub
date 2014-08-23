@@ -1,18 +1,13 @@
 extend layout
 
 block content
-  h2 Script for #{token}
-
   section
-    ol
-      for service in services
-        li
-          span= service
+    p.path= services.join(' => ')
+
+    h3
+      a(href='/#{token}/play', class='button replay') &#8667;
+        span Replay!
 
     if result
       div.result
         img(src='#{result}')
-
-    h3
-      a(href='/#{token}/play', class='button') &#8667;
-        span Replay!

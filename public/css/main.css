@@ -108,7 +108,7 @@ header > div {
   padding-left: 10px;
 }
 
-h1, h2, h3, button {
+h1, h2, h3, button, .path {
   font-family: MaximumSecurity;
 }
 
@@ -224,6 +224,14 @@ section h3 {
   margin: 25px 0 15px;
 }
 
+h3 a.replay, h3 a.replay span {
+  font-size: 4rem;
+}
+
+h3 a.replay {
+  color: #3abe47;
+}
+
 a {
   color: #15acba;
   text-decoration: none;
@@ -278,7 +286,7 @@ a {
 }
 
 #create {
-  color: #44dc73;
+  color: #3abe47;
   display: none;
 }
 
@@ -287,7 +295,6 @@ a {
 }
 
 .result {
-  font-size: 2.6rem;
   margin: 20px 0;
 }
 
