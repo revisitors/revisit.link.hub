@@ -13,5 +13,10 @@
     "url": "http://shielded-sands-7191.herokuapp.com/rotate",
     "description": "rotate anti-clockwise 90deg",
     "repository": "https://github.com/justinabrahms/rotate.revisit.link"
+  },
+  {
+    "url": "http://glitch.nothingissacred.org",
+    "description": "glitcher",
+    "repository": "https://github.com/revisitors/glitcher"
   }
 ]
