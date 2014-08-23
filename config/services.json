@@ -18,5 +18,9 @@
     "url": "http://glitch.nothingissacred.org",
     "description": "glitcher",
     "repository": "https://github.com/revisitors/glitcher"
+  },
+  {
+    "url": "http://localhost:8080",
+    "description": ""
   }
 ]

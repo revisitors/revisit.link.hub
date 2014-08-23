@@ -6,7 +6,6 @@ var maxLimit = $('.max-limit');
 var ImageView = require('imageview');
 var serviceList = $('#service-list');
 var create = $('#create');
-var token = $('.token');
 var body = $('body');
 
 var iv = new ImageView({
@@ -42,7 +41,6 @@ body.on('click', '.online', function () {
 });
 
 $.get('/services', function (data) {
-  token.text(data.token);
   $('#token').val(data.token);
 
   data.services.forEach(function (d) {
