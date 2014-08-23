@@ -8,6 +8,8 @@ var services = require('./lib/services');
 
 nconf.argv().env().file({ file: 'local.json' });
 
+var port = nconf.get('port');
+
 var options = {
   views: {
     engines: {
@@ -21,7 +23,7 @@ var options = {
   }
 };
 
-var server = Hapi.createServer(nconf.get('domain'), nconf.get('port'), options);
+var server = Hapi.createServer(nconf.get('domain'), port, options);
 
 var routes = [
   {
@@ -80,3 +82,4 @@ server.pack.register({
 });
 
 server.start();
+console.log('server running on port: ', port);
