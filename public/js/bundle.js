@@ -9269,6 +9269,7 @@ var ImageView = require('imageview');
 var serviceList = $('#service-list');
 var create = $('#create');
 var body = $('body');
+var fileAdded = false;
 
 var iv = new ImageView({
   quality: 0.5,
@@ -9278,12 +9279,17 @@ var iv = new ImageView({
 iv.preview();
 
 var checkValid = function () {
-  if (services.length > 0 && $('#photo').val().length > 0) {
+  if (services.length > 0 && fileAdded) {
     create.addClass('on');
   } else {
     create.removeClass('on');
   }
 };
+
+body.on('change', '#photo-picker', function () {
+  fileAdded = true;
+  checkValid();
+});
 
 body.on('click', '.online', function () {
   if (services.length < 4) {
@@ -9291,12 +9297,6 @@ body.on('click', '.online', function () {
 
     servicesAdd.text(services.join(' => '));
     servicesEl.val(services.join(','));
-  } else {
-    maxLimit.addClass('on');
-
-    setTimeout(function () {
-      maxLimit.removeClass('on');
-    }, 2500);
   }
 
   checkValid();
@@ -9308,9 +9308,10 @@ $.get('/services', function (data) {
   data.services.forEach(function (d) {
     var li = $('<li><span class="status"> &#9733;</span></li>');
     var url = $('<span class="url"></span>');
-    var description = $('<p class="description"></p>');
+    var description = $('<p class="description"><span></span><img></p>');
     url.text(d.url);
-    description.text(d.description);
+    description.find('span').text(d.description);
+    description.find('img').attr('src', d.sample);
 
     if (d.online) {
       li.addClass('online');

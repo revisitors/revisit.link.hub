@@ -49,7 +49,7 @@ table {
 
 @font-face {
   font-family: 'MaximumSecurity';
-  src: url('../fonts/MAXIMUMSECURITY.ttf');
+  src: url('../fonts/MAXIMUMSECURITY.woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -195,14 +195,13 @@ section p, section li {
 }
 
 section li:first-child {
-  border: 2px solid #0ba9c5;
+  border: 1px solid #0ba9c5;
 }
 
 section li {
-  border-bottom: 2px solid #0ba9c5;
-  border-left: 2px solid #0ba9c5;
-  border-right: 2px solid #0ba9c5;
-  min-height: 70px;
+  border-bottom: 1px solid #0ba9c5;
+  border-left: 1px solid #0ba9c5;
+  border-right: 1px solid #0ba9c5;
   padding: 5px 10px;
 }
 
@@ -237,12 +236,15 @@ a {
   text-decoration: none;
 }
 
-.max-limit {
-  margin: 5px 0 20px 0;
+.description img {
+  display: inline;
+  margin-left: 10px;
+  position: absolute;
+  width: 50px;
 }
 
-.max-limit.on {
-  color: #f00;
+.url {
+  display: none;
 }
 
 .services-added {
@@ -254,7 +256,7 @@ a {
   color: #e14a4a;
   display: inline-block;
   float: left;
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   line-height: 3rem;
   margin-right: 20px;
 }
@@ -264,9 +266,10 @@ a {
 }
 
 .description {
-  color: #888;
-  font-size: 1.2rem;
-  font-style: italic;
+  color: #444;
+  font-size: 1.7rem;
+  line-height: 3.1rem;
+  position: relative;
 }
 
 .content {

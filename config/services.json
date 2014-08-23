@@ -2,27 +2,31 @@
   {
     "url": "http://service-relay.revisit.link",
     "description": "random RGB land",
-    "repository": "https://github.com/revisitors/revisit.service.relay"
+    "repository": "https://github.com/revisitors/revisit.service.relay",
+    "sample": "/images/services/random-rgb.jpg"
   },
   {
     "url": "http://meatcub.es:8000",
     "description": "glitch!",
-    "repository": "https://github.com/kid-icarus/glitch-api"
+    "repository": "https://github.com/kid-icarus/glitch-api",
+    "sample": "/images/services/glitch.jpg"
   },
   {
     "url": "http://shielded-sands-7191.herokuapp.com/rotate",
     "description": "rotate anti-clockwise 90deg",
-    "repository": "https://github.com/justinabrahms/rotate.revisit.link"
+    "repository": "https://github.com/justinabrahms/rotate.revisit.link",
+    "sample": "/images/services/rotate.jpg"
   },
   {
     "url": "http://glitch.nothingissacred.org",
     "description": "glitcher",
-    "repository": "https://github.com/revisitors/glitcher"
+    "repository": "https://github.com/revisitors/glitcher",
+    "sample": "/images/services/glitcher.gif"
   },
   {
     "url": "http://hiiamchris.com:4200",
     "description" : "swagify a still image",
-    "repository": "https://github.com/rozap/sweg.revisit"
-    
+    "repository": "https://github.com/rozap/sweg.revisit",
+    "sample": "/images/services/sweg.gif"
   }
 ]
