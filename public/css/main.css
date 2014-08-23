@@ -148,6 +148,20 @@ h2 {
   position: relative;
 }
 
+body.error {
+  background-image: url(../images/error.gif);
+}
+
+body.error section h2 {
+  font-size: 2.7rem;
+  margin-bottom: 40px;
+}
+
+body.error section h1 {
+  font-size: 3.8rem;
+  text-transform: uppercase;
+}
+
 .token {
   color: #1ae09d;
   display: inline;
@@ -164,6 +178,14 @@ section {
 
 section > * {
     font-weight: 100;
+}
+
+.error section {
+  background-color: rgba(255, 255, 255, 0.95);
+  max-width: none;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
 }
 
 section p, section li {
