@@ -96,7 +96,7 @@ header > div {
   color: #444;
   cursor: pointer;
   font-size: 3.2rem;
-  margin: 20px 0 40px;
+  margin: 20px 0 30px;
 }
 
 .button:hover {
@@ -173,13 +173,13 @@ section p, section li {
 }
 
 section li:first-child {
-  border: 2px dashed #0ba9c5;
+  border: 2px solid #0ba9c5;
 }
 
 section li {
-  border-bottom: 2px dashed #0ba9c5;
-  border-left: 2px dashed #0ba9c5;
-  border-right: 2px dashed #0ba9c5;
+  border-bottom: 2px solid #0ba9c5;
+  border-left: 2px solid #0ba9c5;
+  border-right: 2px solid #0ba9c5;
   min-height: 70px;
   padding: 5px 10px;
 }
@@ -240,7 +240,7 @@ a {
 }
 
 .content {
-  border: 2px dashed #0ba9c5;
+  border: none;
   clear: both;
   color: #2ececc;
   display: block;
@@ -256,7 +256,7 @@ a {
 }
 
 #create {
-  color: #1ae09d;
+  color: #44dc73;
   display: none;
 }
 
