@@ -5,8 +5,10 @@ var servicesAdd = $('.services-added');
 var maxLimit = $('.max-limit');
 var ImageView = require('imageview');
 var serviceList = $('#service-list');
+var create = $('#create');
 var token = $('.token');
 var body = $('body');
+
 var iv = new ImageView({
   quality: 0.5,
   maxSize: 600
@@ -26,6 +28,12 @@ body.on('click', '.online', function () {
     setTimeout(function () {
       maxLimit.removeClass('on');
     }, 2500);
+  }
+
+  if (services.length > 0 && $('#photo').val().length > 0) {
+    create.addClass('on');
+  } else {
+    create.removeClass('on');
   }
 });
 
@@ -55,4 +63,5 @@ body.on('click', '#reset', function () {
   servicesEl.val('');
   $('#preview').empty();
   $('.content, #photo').val('');
+  create.removeClass('on');
 });
