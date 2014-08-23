@@ -1,5 +1,6 @@
 {
     "domain": "localhost",
     "port": 3000,
-    "cookie": "key"
+    "cookie": "key",
+    "analytics": false
 }
