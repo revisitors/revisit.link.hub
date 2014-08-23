@@ -17,7 +17,7 @@
     "joi": "~4.6.2",
     "request": "~2.40.0",
     "revisit-token": "~1.0.0",
-    "revisit-tether": "~2.0.3",
+    "revisit-tether": "~2.0.5",
     "imageview": "~0.0.5",
     "browserify": "~5.9.3",
     "jquery": "~2.1.1",
