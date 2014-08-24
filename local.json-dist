@@ -2,5 +2,6 @@
     "domain": "localhost",
     "port": 3000,
     "cookie": "key",
-    "analytics": false
+    "analytics": false,
+    "wsServer": "ws://ws.revisit.link"
 }
