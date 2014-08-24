@@ -73,8 +73,13 @@
   },
   {
     "url": "http://hiiamchris.com:4200",
-    "description" : "swagify a still image",
+    "description": "swagify a still image",
     "repository": "https://github.com/rozap/sweg.revisit",
     "sample": "/images/services/sweg.gif"
+  },
+  {
+    "url": "http://service-glitch1.revisit.link",
+    "description": "restricted glitch",
+    "sample": "/images/services/glitch1.jpg"
   }
 ]
