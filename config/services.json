@@ -81,5 +81,11 @@
     "url": "http://service-glitch1.revisit.link",
     "description": "restricted glitch",
     "sample": "/images/services/glitch1.jpg"
+  },
+  {
+    "url": "http://butt.es:8080",
+    "description": "add noise to a still image",
+    "sample": "/images/services/noisegopher.jpg"
   }
+
 ]
