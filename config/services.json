@@ -128,5 +128,17 @@
     "description": "randomized glitch animation",
     "repository": "https://github.com/revisitors/glitcher",
     "sample": "/images/services/aniglitch.gif"
+  },
+  {
+    "url": "http://downsample.joefriedl.net",
+    "description" : "crappy jpeg",
+    "repository": "https://github.com/grampajoe/revisit-downsample",
+    "sample": "/images/services/downsample.jpg"
+  },
+  {
+    "url": "http://meatcub.es:8001",
+    "description": "random smiley face",
+    "repository": "https://github.com/revisitors/revisit-lysergix-service",
+    "sample": "/images/services/smiley.png"
   }
 ]
