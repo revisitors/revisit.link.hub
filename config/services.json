@@ -28,5 +28,11 @@
     "description" : "swagify a still image",
     "repository": "https://github.com/rozap/sweg.revisit",
     "sample": "/images/services/sweg.gif"
+  },
+  {
+    "url": "http://downsample.joefriedl.net",
+    "description" : "crappy jpeg",
+    "repository": "https://github.com/grampajoe/revisit-downsample",
+    "sample": "/images/services/downsample.jpg"
   }
 ]
