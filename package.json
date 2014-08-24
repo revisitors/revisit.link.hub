@@ -22,7 +22,7 @@
     "browserify": "~5.9.3",
     "jquery": "~2.1.1",
     "crumb": "~3.1.0",
-    "meatspace-publico": "~0.0.8"
+    "meatspace-publico": "~1.0.1"
   },
   "devDependencies": {
     "nodemon": "~1.2.1"
