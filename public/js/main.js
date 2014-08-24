@@ -1,9 +1,10 @@
 var $ = require('jquery');
+var ImageView = require('imageview');
+
 var services = [];
 var servicesEl = $('#services');
 var servicesAdd = $('.services-added');
 var maxLimit = $('.max-limit');
-var ImageView = require('imageview');
 var serviceList = $('#service-list');
 var create = $('#create');
 var body = $('body');
