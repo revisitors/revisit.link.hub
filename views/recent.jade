@@ -2,9 +2,10 @@ extend layout
 
 block content
   section
-    h1 Recent
-
     ul.display
-      for image in images
-        li
-          img(src='#{image.value.message}')
+      if images.length > 0
+        for image in images
+          li
+            img(src='#{image.value.message}')
+      else
+        li No images found!

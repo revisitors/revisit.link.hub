@@ -108,8 +108,12 @@ header > div {
   padding-left: 10px;
 }
 
-h1, h2, h3, button, .path {
+h1, h2, h3, button, .path, .menu a, .display li {
   font-family: MaximumSecurity;
+}
+
+.display li {
+  font-size: 3rem;
 }
 
 h1 {
@@ -282,6 +286,25 @@ a {
   margin: 10px 0;
   padding: 5px;
   width: 90%;
+}
+
+.menu {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+}
+
+.menu a {
+  background-color: #d9f32c;
+  color: #111;
+  font-size: 1.5rem;
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+.menu a:hover {
+  background-color: #fff;
+  color: #111;
 }
 
 #photo {
