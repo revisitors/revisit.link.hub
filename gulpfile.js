@@ -33,8 +33,7 @@ gulp.task('static', function(){
 });
 
 gulp.task('js', function(){
-  return browserify({debug: true})
-     .add('./public/js/main.js')
+  return browserify('./public/js/main.js', {debug: true})
     .bundle()
     .pipe(source('bundle.js'))
     .pipe(buffer())
