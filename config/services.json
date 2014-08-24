@@ -18,16 +18,74 @@
     "sample": "/images/services/rotate.jpg"
   },
   {
-    "url": "http://glitch.nothingissacred.org",
-    "description": "glitcher",
+    "url": "http://glitch.nothingissacred.org/clamp",
+    "description": "cut color depth",
     "repository": "https://github.com/revisitors/glitcher",
-    "sample": "/images/services/glitcher.gif"
+    "sample": "/images/services/clamp.gif"
+  },
+  {
+    "url": "http://glitch.nothingissacred.org/glitchclamp",
+    "description": "cut color depth with some random flare",
+    "repository": "https://github.com/revisitors/glitcher",
+    "sample": "/images/services/glitchclamp.gif"
+  },
+  {
+    "url": "http://glitch.nothingissacred.org/ghost",
+    "description": "ghost with a random color",
+    "repository": "https://github.com/revisitors/glitcher",
+    "sample": "/images/services/ghost.gif"
+  },
+  {
+    "url": "http://glitch.nothingissacred.org/glitchghost",
+    "description": "ghost with random noise",
+    "repository": "https://github.com/revisitors/glitcher",
+    "sample": "/images/services/glitchghost.gif"
+  },
+  {
+    "url": "http://glitch.nothingissacred.org/solarize",
+    "description": "solarize",
+    "repository": "https://github.com/revisitors/glitcher",
+    "sample": "/images/services/solarize.gif"
+  },
+  {
+    "url": "http://glitch.nothingissacred.org/flip",
+    "description": "flip",
+    "repository": "https://github.com/revisitors/glitcher",
+    "sample": "/images/services/flip.gif"
+  },
+  {
+    "url": "http://glitch.nothingissacred.org/redblueshift",
+    "description": "redblueshift",
+    "repository": "https://github.com/revisitors/glitcher",
+    "sample": "/images/services/redblueshift.gif"
+  },
+  {
+    "url": "http://glitch.nothingissacred.org/spookify",
+    "description": "a 'spooky' animation",
+    "repository": "https://github.com/revisitors/glitcher",
+    "sample": "/images/services/spookify.gif"
+  },
+  {
+    "url": "http://glitch.nothingissacred.org/rbspook",
+    "description": "a glitchy animation",
+    "repository": "https://github.com/revisitors/glitcher",
+    "sample": "/images/services/rbspook.gif"
   },
   {
     "url": "http://hiiamchris.com:4200",
-    "description" : "swagify a still image",
+    "description": "swagify a still image",
     "repository": "https://github.com/rozap/sweg.revisit",
     "sample": "/images/services/sweg.gif"
+  },
+  {
+    "url": "http://service-glitch1.revisit.link",
+    "description": "restricted glitch",
+    "sample": "/images/services/glitch1.jpg"
+  },
+  {
+    "url": "http://butt.es:8080",
+    "description": "add noise to a still image",
+    "sample": "/images/services/noisegopher.jpg"
   },
   {
     "url": "http://downsample.joefriedl.net",
