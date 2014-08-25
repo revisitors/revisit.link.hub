@@ -144,7 +144,7 @@
   },
   {
     "url": "http://thpcod.es:8000",
-    "description": "Square Shuff Shuffler - breaks into rectangles and shuffles them about",
+    "description": "Square Shuff Shuffler",
     "repository": "https://github.com/revisitors/squareshuffle",
     "sample": "http://thpcod.es:8000/sample.png"
   }
