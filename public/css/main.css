@@ -84,6 +84,7 @@ header > div {
 }
 
 .button {
+  background-color: transparent;
   float: right;
 }
 
