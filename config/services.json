@@ -140,5 +140,11 @@
     "description": "random smiley face",
     "repository": "https://github.com/revisitors/revisit-lysergix-service",
     "sample": "http://butt.es/revisit/smiley.png"
+  },
+  {
+    "url": "http://revisitations.herokuapp.com/rando-rotate",
+    "description": "rotate a random amount",
+    "repository": "https://github.com/mferrier/revisitations",
+    "sample": "http://revisitations.herokuapp.com/rando-rotate/preview.jpg"
   }
 ]
