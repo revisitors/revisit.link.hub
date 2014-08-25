@@ -14,6 +14,7 @@
     "browserify": "^5.9.3",
     "crumb": "^3.1.0",
     "gulp": "^3.8.7",
+    "gulp-autowatch": "0.0.1",
     "gulp-cached": "^1.0.1",
     "gulp-csso": "^0.2.9",
     "gulp-if": "^1.2.4",
