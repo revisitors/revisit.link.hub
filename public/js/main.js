@@ -8,6 +8,8 @@ var maxLimit = $('.max-limit');
 var serviceList = $('#service-list');
 var create = $('#create');
 var body = $('body');
+var form = $('form');
+var loading = $('#loading');
 var fileAdded = false;
 
 var iv = new ImageView({
@@ -60,6 +62,11 @@ $.get('/services', function (data) {
     li.append(url).append(description);
     serviceList.append(li);
   });
+});
+
+form.on('submit', function () {
+  create.find('span').text('Processing, please wait!');
+  create.prop('disabled', true);
 });
 
 body.on('click', '#reset', function () {

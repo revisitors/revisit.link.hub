@@ -2,9 +2,8 @@ extend layout
 
 block content
   section
-    h3
-      a(href='/#{token}/play', class='button replay') &#8667;
-        span Replay!
+    a(href='/#{token}/play', id='replay', class='button replay', onclick='this.className="off"') &#8667;
+      span Replay!
 
     if result
       div.result

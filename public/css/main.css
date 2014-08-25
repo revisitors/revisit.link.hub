@@ -72,7 +72,7 @@ body {
 
 header {
   background-color: #333;
-  background-image: url(../images/back.jpg);
+  background-image: url(/images/back.jpg);
   width: 100%;
 }
 
@@ -228,17 +228,23 @@ section h3 {
   margin: 25px 0 15px;
 }
 
-h3 a.replay, h3 a.replay span {
+#replay, #replay > span {
+  font-family: 'MaximumSecurity';
   font-size: 4rem;
 }
 
-h3 a.replay {
+#replay {
   color: #3abe47;
 }
 
 a {
   color: #15acba;
   text-decoration: none;
+}
+
+.off {
+  display: none;
+  text-indent: -9999px;
 }
 
 .description img {
