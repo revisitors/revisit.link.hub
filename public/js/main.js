@@ -66,7 +66,5 @@ body.on('click', '#reset', function () {
   services = [];
   servicesAdd.empty();
   servicesEl.val('');
-  $('#preview').empty();
-  $('.content, #photo').val('');
   create.removeClass('on');
 });
