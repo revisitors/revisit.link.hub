@@ -339,3 +339,41 @@ ul.display li {
 footer p {
   color: #777;
 }
+
+@media only screen and (max-width: 460px) {
+  section {
+    padding: 0 10px;
+  }
+
+  canvas {
+    width: 300px;
+  }
+  #service-list li .status {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin-right: 10px;
+  }
+
+  #service-list li {
+    clear: both;
+    margin: 0 auto;
+    width: 300px;
+  }
+
+  .description {
+    font-size: 1rem;
+    line-height: 2.2rem;
+  }
+
+  .description img {
+    width: 20px;
+  }
+
+  .button, .button span {
+    font-size: 2.5rem;
+  }
+
+  .result img {
+    width: 300px;
+  }
+}

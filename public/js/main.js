@@ -57,7 +57,7 @@ $.get('/services', function (data) {
     }
 
     li.append(url).append(description);
-    serviceList.append(li);
+    serviceList.html(li);
   });
 });
 
