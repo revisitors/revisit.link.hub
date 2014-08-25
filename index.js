@@ -72,7 +72,7 @@ server.route({
   method: "GET",
   handler: {
     directory: {
-      path: './public',
+      path: './dist',
       listing: false,
       index: false
     }
