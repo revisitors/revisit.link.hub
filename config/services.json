@@ -141,5 +141,11 @@
     "description": "rotate a random amount",
     "repository": "https://github.com/mferrier/revisitations",
     "sample": "http://revisitations.herokuapp.com/rando-rotate/preview.jpg"
+  },
+  {
+    "url": "http://meatcub.es:8002",
+    "description": "post to @revisitron twitter!",
+    "repository": "https://github.com/revisitors/revisit-twitter",
+    "sample": "http://butt.es/revisit/twitter.jpg"
   }
 ]
