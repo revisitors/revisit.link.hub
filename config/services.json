@@ -153,5 +153,11 @@
     "description": "Sine/Cosine fuckery",
     "repository": "https://github.com/waferbaby/glump",
     "sample": "http://revisit.waferbaby.com/glump.jpg"
+  },
+  {
+    "url": "http://revisit-butt-service.herokuapp.com/",
+    "description": "ascii butts on 'em",
+    "repository": "https://github.com/revisitors/revisit-butt-service",
+    "sample": "http://revisit-butt-service.herokuapp.com/butt-preview.png"
   }
 ]
