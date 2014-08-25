@@ -43,6 +43,7 @@ body.on('click', '.online', function () {
 
 $.get('/services', function (data) {
   $('#token').val(data.token);
+  serviceList.empty();
 
   data.services.forEach(function (d) {
     var li = $('<li><span class="status"> &#9733;</span></li>');
@@ -57,7 +58,7 @@ $.get('/services', function (data) {
     }
 
     li.append(url).append(description);
-    serviceList.html(li);
+    serviceList.append(li);
   });
 });
 
