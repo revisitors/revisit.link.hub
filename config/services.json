@@ -125,7 +125,7 @@
     "sample": "http://butt.es/revisit/downsample.jpg"
   },
   {
-    "url": "http://meatcub.es:8001",
+    "url": "http://glitch2.meatcub.es:8001",
     "description": "random smiley face",
     "repository": "https://github.com/revisitors/revisit-lysergix-service",
     "sample": "http://butt.es/revisit/smiley.png"
