@@ -6,10 +6,11 @@ var csso = require('gulp-csso');
 var browserify = require('browserify');
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
+var autowatch = require('gulp-autowatch');
 var sourcemaps = require('gulp-sourcemaps');
 var mkdirp = require('mkdirp');
 var rimraf = require('rimraf');
-var globs = {
+var paths = {
   js: 'public/js/*.js',
   css: 'public/css/*',
   static: ['public/**/*', '!public/js/*.js', '!public/css/*.css']
@@ -19,13 +20,11 @@ rimraf.sync('./dist');
 mkdirp.sync('./dist');
 
 gulp.task('watch', function(){
-  gulp.watch(globs.css, ['css']);
-  gulp.watch(globs.js, ['js']);
-  gulp.watch(globs.static, ['static']);
+  autowatch(gulp, paths);
 });
 
 gulp.task('static', function(){
-  return gulp.src(globs.static)
+  return gulp.src(paths.static)
     .pipe(cached('build'))
     .pipe(gif('*.js', uglify()))
     .pipe(gif('*.css', csso()))
