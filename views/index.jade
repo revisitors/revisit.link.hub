@@ -1,25 +1,32 @@
 extend layout
 
 block content
-  section
-    h3 1. Choose an image
-    #preview
-    input(type='file', id='photo-picker', class='content')
+  section#image.step
+    header
+      h3 Choose an Image
 
-  section
-    h3 2. Click on 1-4 services below
-    h2 (you can choose the same one more than once!)
-    p.services-added
+    form.uploader(method='post', action='/service')
+      #preview
+      input(type='file', id='photo-picker', class='content')
+
+  section#transformations.step
+    header
+      h3 Choose Services
+
+    .services-added-container
+      ol.services-added.editable
+      p.placeholder Pick 1-4 services below. You can choose the same one more than once!
+
     ol#service-list
       li Loading services ... please hold.
 
-  section
+  section#go.step.no-icon
     form(method='post', action='/service')
       input(type='hidden', name='crumb', value='#{crumb}')
       textarea(name='content', id='photo')
       input(type='hidden', name='token', id="token")
       input(type='hidden', id='services', name='services', value='')
-      button(type='button', class='button reset', id='reset') &#8667;
-        span Reset
-      button(type='submit', class='button', id='create') &#8667;
-        span Create!
+
+      .button-row
+        button#reset.button.subtle(type='button') Reset
+        button#create.button(type='submit') Create
