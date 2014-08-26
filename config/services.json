@@ -143,6 +143,12 @@
     "sample": "http://butt.es/revisit/twitter.jpeg"
   },
   {
+    "url": "http://glitch2.meatcub.es:8003",
+    "description": "post to http://chat.meatspac.es",
+    "repository": "https://github.com/revisitors/revisit-meatspac",
+    "sample": "http://glitch2.meatcub.es/meatspaces.png"
+  },
+  {
     "url": "http://thpcod.es:8000",
     "description": "Square Shuff Shuffler",
     "repository": "https://github.com/revisitors/squareshuffle",
