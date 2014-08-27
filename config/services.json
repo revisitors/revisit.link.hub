@@ -182,6 +182,11 @@
     "url": "http://ricky.expert:8000",
     "description": "add a raving glitchy megaman to 'em",
     "sample": "http://ricky.expert:8000/grumpy.gif"
-    
+  },
+  {
+    "url": "http://memeify.jrhodes.me:8000",
+    "description": "meatchat-fueled markov memeification",
+    "repository": "https://github.com/jasonrhodes/meatspace-markov-memeify",
+    "sample": "http://memeify.jrhodes.me:8000/memeify-sample.jpg"
   }
 ]
