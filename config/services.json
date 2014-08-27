@@ -155,10 +155,10 @@
     "sample": "http://thpcod.es:8000/sample.png"
   },
   {
-    "url": "http://revisit.waferbaby.com",
-    "description": "Sine/Cosine fuckery",
-    "repository": "https://github.com/waferbaby/glump",
-    "sample": "http://revisit.waferbaby.com/glump.jpg"
+    "url": "http://revisit.waferbaby.com/compy",
+    "description": "Composite randomness",
+    "repository": "https://github.com/waferbaby/revisit",
+    "sample": "http://revisit.waferbaby.com/images/compy.jpg"
   },
   {
     "url": "http://revisit-butt-service.herokuapp.com",
