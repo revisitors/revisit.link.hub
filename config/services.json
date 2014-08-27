@@ -155,7 +155,7 @@
     "sample": "http://thpcod.es:8000/sample.png"
   },
   {
-    "url": "http://revisit.waferbaby.com/compy",
+    "url": "http://revisit.waferbaby.com/compy/",
     "description": "Composite randomness",
     "repository": "https://github.com/waferbaby/revisit",
     "sample": "http://revisit.waferbaby.com/images/compy.jpg"
