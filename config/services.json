@@ -171,5 +171,12 @@
     "description": "blur faces",
     "repository": "https://github.com/imakewebthings/revisit-faceblur",
     "sample": "http://imakewebthings.com/revisit-faceblur/preview.jpg"
+  },
+  {
+    "url": "http://glitch.bren.zone",
+    "description": "slice vertically, then shuffle 'em up",
+    "respository": "https://github.com/brenna/glitch-shuffle",
+    "sample": "http://bren.zone/cat-shuffle.png"
+    
   }
 ]
