@@ -177,6 +177,11 @@
     "description": "slice vertically, then shuffle 'em up",
     "respository": "https://github.com/brenna/glitch-shuffle",
     "sample": "http://bren.zone/cat-shuffle.png"
+  },
+  {
+    "url": "http://ricky.expert:8000",
+    "description": "add a raving glitchy megaman to 'em",
+    "sample": "http://ricky.expert:8000/grumpy.gif"
     
   }
 ]
