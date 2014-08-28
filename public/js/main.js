@@ -1,17 +1,17 @@
-var $         = require('jquery');
+var $ = require('jquery');
 var ImageView = require('imageview');
 
-var services    = [];
-var servicesEl  = $('#services');
+var services = [];
+var servicesEl = $('#services');
 var servicesAdd = $('.services-added');
-var maxLimit    = $('.max-limit');
+var maxLimit = $('.max-limit');
 var serviceList = $('#service-list');
-var create      = $('#create');
-var body        = $('body');
-var form        = $('form');
-var loading     = $('#loading');
-var fileAdded   = false;
-var token       = $('.token');
+var create = $('#create');
+var body = $('body');
+var form = $('form');
+var loading = $('#loading');
+var fileAdded = false;
+var token = $('.token');
 
 var iv = new ImageView({
   quality: 0.5,
@@ -75,10 +75,10 @@ $.get('/services', function (data) {
   serviceList.empty();
 
   data.services.forEach(function (d) {
-    var li          = $('<li class="service-list-item"></li>');
-    var preview     = $('<div class="image-preview"><img /></div>');
-    var title       = $('<h4 />');
-    var url         = $('<div class="url" />');
+    var li = $('<li class="service-list-item"></li>');
+    var preview = $('<div class="image-preview"><img /></div>');
+    var title = $('<h4 />');
+    var url = $('<div class="url" />');
 
     li.data({ title: d.description, url: d.url });
     preview.find('img').attr('src', d.sample);
