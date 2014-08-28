@@ -12,8 +12,10 @@ html
     header
       div
         h1
-          a(href="/") revisit.link.hub
-            span !
-        h2 An API playground.
+          a(href="/") revisit<span>.link.hub</span>
 
-    block content
+        nav
+          a(href='http://ws.revisit.link', target='_blank', id='live') Live Feed
+
+    .wrapper
+      block content

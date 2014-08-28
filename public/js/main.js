@@ -15,32 +15,32 @@ var token = $('.token');
 
 var iv = new ImageView({
   quality: 0.5,
-  maxSize: 800
+  maxSize: 600
 });
 
 iv.preview();
 
-var renderSelectedServices = function (services) {
+function renderSelectedServices(services) {
   var serviceItems = $.map(services, function (s, idx) {
     return '<li data-index="' + idx + '">' + s.title + '</li>';
   });
+
   var serviceData = $.map(services, function (s, idx) {
     return s.url;
   });
 
   servicesAdd.toggleClass('active', !!services.length).html(serviceItems);
   servicesEl.val(serviceData.join(','));
+  checkValid();
 };
 
-var checkValid = function () {
+function checkValid() {
   if (services.length > 0 && fileAdded) {
     create.removeAttr('disabled');
-  }
-  else {
+  } else {
     create.attr('disabled', true);
   }
 };
-checkValid();
 
 body.on('change', '#photo-picker', function () {
   fileAdded = true;
@@ -48,16 +48,15 @@ body.on('change', '#photo-picker', function () {
 });
 
 body.on('click', '.online', function () {
-  if (services.length < 4) {
+  if (services.length < 5) {
     services.push($(this).data());
     renderSelectedServices(services);
-  }
-  else {
+  } else {
     servicesAdd.addClass('alert');
 
     setTimeout(function () {
       servicesAdd.removeClass('alert');
-    }, 2000);
+    }, 1500);
   }
 
   checkValid();

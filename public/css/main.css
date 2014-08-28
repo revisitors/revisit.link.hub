@@ -116,6 +116,24 @@ a:active {
   text-decoration: none;
 }
 
+/* ------------------------------ Error ------------------------------ */
+
+body.error {
+  text-align: center;
+}
+
+body.error section h1 {
+  color: #ff3dab;
+  font-size: 3rem;
+  margin: 20px 0;
+  text-transform: uppercase;
+}
+
+body.error h2 {
+  color: #eee;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
 
 /* ------------------------------ Header ------------------------------ */
 
@@ -340,12 +358,10 @@ section h3 {
 /* ------------------------------ Services Added ------------------------------ */
 
 .services-added {
-  margin: 20px 0;
-  padding: 5px 10px 0;
+  padding: 5px;
   min-height: 42px;
-  border: 1px solid #D5D5D5;
   border-radius: 4px;
-  background: #FFF;
+  background: rgba(1, 1, 1, 0.7);
   font-size: .85rem;
 }
 
@@ -388,7 +404,10 @@ section h3 {
 }
 
 .services-added-container {
-  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  position: fixed;
 }
 
 .services-added-container .placeholder {
@@ -397,8 +416,8 @@ section h3 {
   left: 15px;
   margin: 0;
   padding: 0;
-  color: #B9B9B9;
-  font-size: .85em;
+  color: #eee;
+  font-size: 1em;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -415,7 +434,7 @@ section h3 {
 }
 
 .services-added.active.alert {
-  border-color: #E6614F;
+  background-color: #ce2f7e;
 }
 
 .services-added.active.alert li {
@@ -471,16 +490,16 @@ section.step.no-icon::after {
 
 .image-preview {
   display: block;
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
   border-radius: 50%;
   overflow: hidden;
 }
 
 .image-preview > img {
   display: block;
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
 }
 
 
@@ -494,28 +513,29 @@ section.step.no-icon::after {
 
 #service-list .loading {
   color: #fff;
+  font-family: 'MaximumSecurity';
   font-size: 2rem;
 }
 
 .service-list-item {
   display: block;
-  margin: 10px 0;
-  border-radius: 4px;
-  background: #F7F7F7;
+  margin: 5px 8px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.4);
   cursor: not-allowed;
   overflow: hidden;
 }
 
 .service-list-item .image-preview {
   float: left;
-  margin: 15px;
+  margin: 5px 10px;
   opacity: .66;
 }
 
 .service-list-item h4 {
   font-size: 1.2rem;
-  line-height: 2.2rem;
-  margin: 25px 15px 0 0;
+  line-height: 1.2rem;
+  margin: 20px 15px 0 0;
   opacity: .66;
 }
 
@@ -531,6 +551,10 @@ section.step.no-icon::after {
 .service-list-item.online {
   background: #FFF;
   cursor: pointer;
+}
+
+.service-list-item.online:hover {
+  background-color: #88fbdc;
 }
 
 .service-list-item.online .image-preview,
