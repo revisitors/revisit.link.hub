@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="370px" height="370px" viewBox="0 0 370 370" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8054) - http://www.bohemiancoding.com/sketch -->
+    <title>Slice 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <path d="M185,40 C223.73,40 260.144,55.083 287.53,82.47 C314.916,109.857 330,146.27 330,185 C330,223.73 314.917,260.144 287.53,287.53 C260.143,314.916 223.73,330 185,330 C146.27,330 109.856,314.917 82.47,287.53 C55.084,260.143 40,223.73 40,185 C40,146.27 55.083,109.856 82.47,82.47 C109.857,55.084 146.27,40 185,40 L185,40 Z M185,0 C82.827,0 0,82.828 0,185 C0,287.172 82.827,370 185,370 C287.172,370 370,287.172 370,185 C370,82.828 287.172,0 185,0 L185,0 Z M185,109 C143.026,109 109,143.026 109,185 C109,226.974 143.026,261 185,261 C226.974,261 261,226.974 261,185 C261,143.026 226.974,109 185,109 L185,109 Z" id="checkbox-18-icon" fill="#C2C2C2" sketch:type="MSShapeGroup"></path>
+    </g>
+</svg>

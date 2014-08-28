@@ -9260,24 +9260,39 @@ return jQuery;
 }));
 
 },{}],3:[function(require,module,exports){
-var $ = require('jquery');
+var $         = require('jquery');
 var ImageView = require('imageview');
 
-var services = [];
-var servicesEl = $('#services');
+var services    = [];
+var servicesEl  = $('#services');
 var servicesAdd = $('.services-added');
-var maxLimit = $('.max-limit');
+var maxLimit    = $('.max-limit');
 var serviceList = $('#service-list');
-var create = $('#create');
-var body = $('body');
-var fileAdded = false;
+var create      = $('#create');
+var body        = $('body');
+var form        = $('form');
+var loading     = $('#loading');
+var fileAdded   = false;
+var token       = $('.token');
 
 var iv = new ImageView({
   quality: 0.5,
-  maxSize: 600
+  maxSize: 800
 });
 
 iv.preview();
+
+var renderSelectedServices = function (services) {
+  var serviceItems = $.map(services, function (s, idx) {
+    return '<li data-index="' + idx + '">' + s.title + '</li>';
+  });
+  var serviceData = $.map(services, function (s, idx) {
+    return s.url;
+  });
+
+  servicesAdd.toggleClass('active', !!services.length).html(serviceItems);
+  servicesEl.val(serviceData.join(','));
+};
 
 var checkValid = function () {
   if (services.length > 0 && fileAdded) {
@@ -9294,13 +9309,24 @@ body.on('change', '#photo-picker', function () {
 
 body.on('click', '.online', function () {
   if (services.length < 4) {
-    services.push($(this).find('.url').text());
+    services.push($(this).data());
+    renderSelectedServices(services);
+  }
+  else {
+    servicesAdd.addClass('alert');
 
-    servicesAdd.text(services.join(' => '));
-    servicesEl.val(services.join(','));
+    setTimeout(function () {
+      servicesAdd.removeClass('alert');
+    }, 2000);
   }
 
   checkValid();
+});
+
+servicesAdd.on('click', 'li', function () {
+  var idx = parseInt(this.getAttribute('data-index'), 10);
+  services.splice(idx, 1);
+  renderSelectedServices(services);
 });
 
 $.get('/services', function (data) {
@@ -9308,29 +9334,39 @@ $.get('/services', function (data) {
   serviceList.empty();
 
   data.services.forEach(function (d) {
-    var li = $('<li><span class="status"> &#9733;</span></li>');
-    var url = $('<span class="url"></span>');
-    var description = $('<p class="description"><span></span><img></p>');
+    var li          = $('<li class="service-list-item"></li>');
+    var description = $('<p class="description" />');
+    var preview     = $('<div class="image-preview"><img /></div>');
+    var title       = $('<h4 />');
+    var url         = $('<div class="url" />');
+
+    li.data({ title: d.title, url: d.url });
+    description.text(d.description);
+    preview.find('img').attr('src', d.sample);
+    title.text(d.title);
     url.text(d.url);
-    description.find('span').text(d.description);
-    description.find('img').attr('src', d.sample);
 
     if (d.online) {
       li.addClass('online');
     }
 
-    li.append(url).append(description);
+    li.append(preview, title, url, (d.description ? description : undefined));
     serviceList.append(li);
   });
 });
 
+form.on('submit', function () {
+  create.find('span').text('Processing, please wait!');
+  create.prop('disabled', true);
+});
+
 body.on('click', '#reset', function () {
   services = [];
-  servicesAdd.empty();
+  renderSelectedServices(services);
   servicesEl.val('');
-  $('#preview').empty();
-  $('.content, #photo').val('');
   create.removeClass('on');
+  $('#preview').empty();
+  $('.content').val('');
 });
 
 },{"imageview":1,"jquery":2}]},{},[3]);
