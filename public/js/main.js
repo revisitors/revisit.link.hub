@@ -18,6 +18,7 @@ var iv = new ImageView({
   maxSize: 800
 });
 
+fileAdded = iv.hasPic
 iv.preview();
 
 var renderSelectedServices = function (services) {
