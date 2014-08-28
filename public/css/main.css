@@ -351,9 +351,19 @@ section h3 {
 
 .result img {
   display: block;
-  margin: 0 auto;
 }
 
+.replay {
+  float: left;
+}
+
+.tumblr {
+  display: inline-block;
+  float: right;
+  font-size: 1rem;
+  line-height: 1.7rem;
+  width: 300px;
+}
 
 /* ------------------------------ Services Added ------------------------------ */
 

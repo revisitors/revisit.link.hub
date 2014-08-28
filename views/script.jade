@@ -2,9 +2,10 @@ extend layout
 
 block content
   section
-    .button-row
-      a.button(href='/#{token}/play') Replay
-
     if result
+      .button-row
+        a.button(href='/#{token}/play', class='replay') Replay
+        a(class='tumblr', href='http://revisitron.tumblr.com', target='_blank') Think this image is awesome? Submit it to Tumblr!
+
       div.result
         img(src=result)
