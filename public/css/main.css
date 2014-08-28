@@ -141,7 +141,7 @@ body > header {
   position: relative;
   width: 100%;
   background: #2F323A;
-  z-index: 1024;
+  z-index: 2;
 }
 
 body > header h1 {
@@ -418,6 +418,7 @@ section h3 {
   right: 0;
   top: 0;
   position: fixed;
+  z-index: 3;
 }
 
 .services-added-container .placeholder {
@@ -571,4 +572,52 @@ section.step.no-icon::after {
 .service-list-item.online h4,
 .service-list-item.online .description {
   opacity: 1;
+}
+
+/* ------------------------------ Mobile View ------------------------------ */
+
+@media only screen and (max-width: 680px) {
+  header  h1 {
+    padding-left: 10px;
+  }
+
+  #live {
+    padding-right: 10px;
+  }
+
+  .result img {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .uploader {
+    margin-right: 10px;
+  }
+
+  .button-row {
+    padding: 0 10px;
+  }
+
+  .services-added {
+    min-height: 70px;
+  }
+
+  .final {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .services-added li {
+    margin: 0 2px 2px 0;
+  }
+
+  .tumblr {
+    margin-top: 20px;
+  }
+
+  .service-list-item h4 {
+    font-size: 0.9rem;
+    margin-top: 15px;
+  }
 }
