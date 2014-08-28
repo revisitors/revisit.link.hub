@@ -599,7 +599,7 @@ section.step.no-icon::after {
   }
 
   .services-added {
-    min-height: 70px;
+    min-height: 60px;
   }
 
   .final {
@@ -608,6 +608,15 @@ section.step.no-icon::after {
 }
 
 @media only screen and (max-width: 680px) {
+  .services-added {
+    min-height: 50px;
+  }
+
+  .services-added-container .placeholder {
+    font-size: 0.8rem;
+    font-weight: 100;
+  }
+
   .services-added li {
     margin: 0 2px 2px 0;
   }
