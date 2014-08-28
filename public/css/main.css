@@ -418,7 +418,7 @@ section h3 {
   right: 0;
   top: 0;
   position: fixed;
-  z-index: 3;
+  z-index: 1;
 }
 
 .services-added-container .placeholder {
