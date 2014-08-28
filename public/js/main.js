@@ -78,18 +78,16 @@ $.get('/services', function (data) {
     var li = $('<li class="service-list-item"></li>');
     var preview = $('<div class="image-preview"><img /></div>');
     var title = $('<h4 />');
-    var url = $('<div class="url" />');
 
     li.data({ title: d.description, url: d.url });
     preview.find('img').attr('src', d.sample);
     title.text(d.description);
-    url.text(d.url);
 
     if (d.online) {
       li.addClass('online');
     }
 
-    li.append(preview, title, url);
+    li.append(preview, title);
     serviceList.append(li);
   });
 });

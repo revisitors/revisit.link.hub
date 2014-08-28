@@ -54,8 +54,16 @@ table {
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'MaximumSecurity';
+  src: url('../fonts/MAXIMUMSECURITY.woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  background-color: #F7F7F7;
+  background-image: url(/images/omg.png);
+  background-color: #F1F1F1;
   color: #6C6D6F;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -73,8 +81,12 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color: #2A2D33;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'MaximumSecurity';
   font-weight: 300;
+}
+
+h4, h5, h6 {
+  font-family: 'Arial', sans-serif;
 }
 
 a {
@@ -128,6 +140,7 @@ body > header h1 a:visited,
 body > header h1 a:hover,
 body > header h1 a:active {
   color: #959CAC;
+  font-size: 1.8rem;
 }
 
 body > header h1 a span {
@@ -153,25 +166,18 @@ body > header > div {
 }
 
 body > header nav {
-  text-align: center;
+  text-align: right;
 }
 
-body > header nav a {
-  color: #ADB0BA;
-  font-size: .75rem;
+body > header nav a#live {
+  color: #FFFF33;
+  font-family: 'MaximumSecurity';
+  font-size: 1.8rem;
   text-transform: uppercase;
 }
 
-body > header nav a,
-body > header nav a:link,
-body > header nav a:visited {
-  color: #ADB0BA;
-}
-body > header nav a:hover {
+body > header nav a#live:hover {
   color: #FFF;
-}
-body > header nav a:active {
-  color: #ADB0BA;
 }
 
 body > header .token {
@@ -197,6 +203,7 @@ body > header .token {
 
 #photo-picker {
   display: block;
+  font-size: 1.3rem;
   position: absolute;
   top: 50%;
   left: 25%;
@@ -221,19 +228,24 @@ body > header .token {
 
 /* ------------------------------ Buttons ------------------------------ */
 
+#reset {
+  background-color: #f1f1f1;
+}
+
 .button {
   display: block;
   margin: 0;
   padding: 0 20px;
   border: 1px solid #6CB5F4;
-  border-radius: 2px;
-  height: 2rem;
-  line-height: 2rem;
+  border-radius: 2.3px;
+  font-family: 'MaximumSecurity';
+  line-height: 2.3rem;
   background: #6CB5F4;
   color: #FFF;
   cursor: pointer;
-  font-size: .9rem;
+  font-size: 1.9rem;
   font-weight: 500;
+  padding: 5px 10px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -306,22 +318,11 @@ section {
 }
 
 section h3 {
+  color: #aaa;
+  text-shadow: #111 1px 1px 0;
   margin: 25px 0 15px;
-  font-size: 2.2rem;
-}
-
-
-/* ------------------------------ Token ------------------------------ */
-
-.token {
-  display: inline-block;
-  padding: 0 15px;
-  height: 25px;
-  border: 1px solid #4D505A;
-  border-radius: 15px;
-  line-height: 23px;
-  color: #4D505A;
-  font-size: .75em;
+  font-size: 2.3rem;
+  text-transform: uppercase;
 }
 
 
@@ -357,8 +358,8 @@ section h3 {
   height: 30px;
   line-height: 30px;
   border-radius: 4px;
-  background: #E6614F;
-  color: #FFF;
+  background: #36d6c3;
+  color: #113632;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -486,16 +487,20 @@ section.step.no-icon::after {
 
 /* ------------------------------ Service List ------------------------------ */
 
-.service-list {
+#service-list {
   margin: 20px 0;
   padding: 0;
   list-style-type: none;
 }
 
+#service-list .loading {
+  color: #fff;
+  font-size: 2rem;
+}
+
 .service-list-item {
   display: block;
   margin: 10px 0;
-  border: 1px solid #D5D5D5;
   border-radius: 4px;
   background: #F7F7F7;
   cursor: not-allowed;
@@ -509,16 +514,10 @@ section.step.no-icon::after {
 }
 
 .service-list-item h4 {
+  font-size: 1.2rem;
+  line-height: 2.2rem;
   margin: 25px 15px 0 0;
   opacity: .66;
-}
-
-.service-list-item .url {
-  margin-top: -2px;
-  color: #B9B9B9;
-  font-family: 'Open Sans', sans-serif;
-  font-size: .85rem;
-  line-height: 2rem;
 }
 
 .service-list-item .description {

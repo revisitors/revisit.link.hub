@@ -18,9 +18,9 @@ block content
       p.placeholder Pick 1-4 services below. You can choose the same one more than once!
 
     ol#service-list
-      li Loading services ... please hold.
+      li.loading Loading services ... please hold.
 
-  section#go.step.no-icon
+  section#go.no-icon
     form(method='post', action='/service')
       input(type='hidden', name='crumb', value='#{crumb}')
       textarea(name='content', id='photo')
