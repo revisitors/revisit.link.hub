@@ -8,6 +8,8 @@ This is the main hub that revisit.link services go through at http://hub.revisit
 
     cd revisit.link.hub
 
+    cp local.json-dist local.json
+
     npm install
 
     npm start
