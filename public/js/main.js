@@ -32,7 +32,7 @@ function renderSelectedServices(services) {
   servicesAdd.toggleClass('active', !!services.length).html(serviceItems);
   servicesEl.val(serviceData.join(','));
   checkValid();
-};
+}
 
 function checkValid() {
   if (services.length > 0 && fileAdded) {
@@ -40,7 +40,7 @@ function checkValid() {
   } else {
     create.attr('disabled', true);
   }
-};
+}
 
 body.on('change', '#photo-picker', function () {
   $('#preview').css('display', 'block');
