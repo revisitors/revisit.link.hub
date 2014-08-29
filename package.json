@@ -13,6 +13,21 @@
   "dependencies": {
     "browserify": "^5.9.3",
     "crumb": "^3.1.0",
+    "hapi": "~6.4.0",
+    "imageview": "~2.0.0",
+    "jade": "~1.5.0",
+    "jquery": "~2.1.1",
+    "meatspace-publico": "~1.0.1",
+    "nconf": "~0.6.9",
+    "request": "~2.40.0",
+    "revisit-tether": "~2.1.5",
+    "revisit-token": "~1.0.0",
+    "ws": "^0.4.32",
+    "gm": "~1.16.0",
+    "data-uri-to-buffer": "~0.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "~1.2.1",
     "gulp": "^3.8.7",
     "gulp-autowatch": "0.0.1",
     "gulp-cached": "^1.0.1",
@@ -21,26 +36,10 @@
     "gulp-match": "^0.2.0",
     "gulp-sourcemaps": "^1.1.1",
     "gulp-uglify": "^0.3.1",
-    "hapi": "~6.4.0",
-    "imageview": "~1.0.0",
-    "jade": "~1.5.0",
-    "joi": "~4.6.2",
-    "jquery": "~2.1.1",
-    "meatspace-publico": "~1.0.1",
-    "mkdirp": "^0.5.0",
-    "nconf": "~0.6.9",
-    "prr": "^1.0.1",
-    "request": "~2.40.0",
-    "revisit-tether": "~2.1.5",
-    "revisit-token": "~1.0.0",
     "rimraf": "^2.2.8",
     "vinyl-buffer": "0.0.0",
     "vinyl-source-stream": "^0.1.1",
-    "ws": "^0.4.32",
-    "xtend": "^4.0.0"
-  },
-  "devDependencies": {
-    "nodemon": "~1.2.1"
+    "mkdirp": "^0.5.0"
   },
   "repository": {
     "type": "git",

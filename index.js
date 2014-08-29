@@ -1,7 +1,6 @@
 'use strict';
 
 var Hapi = require('hapi');
-var Joi = require('joi');
 var nconf = require('nconf');
 
 var services = require('./lib/services');

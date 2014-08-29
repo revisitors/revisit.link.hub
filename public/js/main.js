@@ -15,7 +15,7 @@ var token = $('.token');
 
 var iv = new ImageView({
   quality: 0.5,
-  maxSize: 600
+  previewSize: 500
 });
 
 iv.preview();
