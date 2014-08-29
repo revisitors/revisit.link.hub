@@ -43,6 +43,7 @@ function checkValid() {
 };
 
 body.on('change', '#photo-picker', function () {
+  $('#preview').css('display', 'block');
   fileAdded = true;
   checkValid();
 });
