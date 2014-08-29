@@ -83,6 +83,12 @@
     "supports": ["jpeg"]
   },
   {
+    "url": "http://butt.es:8081",
+    "description": "random blend effects",
+    "sample": "http://butt.es/revisit/noisegopher.jpg",
+    "supports": ["jpeg"]
+  },
+  {
     "url": "http://glitch.nothingissacred.org/grayscale",
     "description": "grayscale",
     "repository": "https://github.com/revisitors/glitcher",
