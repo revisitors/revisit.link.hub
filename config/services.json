@@ -188,5 +188,11 @@
     "description": "OMG, so rude!",
     "repository": "https://github.com/waferbaby/revisit",
     "sample": "http://revisit.waferbaby.com/images/swears.jpg"
+  },
+  {
+    "url": "http://technodrome.brokenspork.net/trippyshift",
+    "description": "overlay an offset copy and make it trippy",
+    "repository": "https://github.com/Flet/technodrome",
+    "sample": "http://technodrome.brokenspork.net/trippyshift/sample.jpg"
   }
 ]
