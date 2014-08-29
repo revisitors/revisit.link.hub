@@ -155,7 +155,7 @@
     "sample": "http://thpcod.es:8000/sample.png"
   },
   {
-    "url": "http://revisit.waferbaby.com/compy/",
+    "url": "http://revisit.waferbaby.com/compy",
     "description": "Composite randomness",
     "repository": "https://github.com/waferbaby/revisit",
     "sample": "http://revisit.waferbaby.com/images/compy.jpg"
@@ -190,7 +190,7 @@
     "sample": "http://memeify.jrhodes.me:8000/memeify-sample.jpg"
   },
   {
-    "url": "http://revisit.waferbaby.com/swears/",
+    "url": "http://revisit.waferbaby.com/swears",
     "description": "OMG, so rude!",
     "repository": "https://github.com/waferbaby/revisit",
     "sample": "http://revisit.waferbaby.com/images/swears.jpg"
