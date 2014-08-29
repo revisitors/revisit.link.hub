@@ -66,12 +66,6 @@
     "sample": "http://butt.es/revisit/rbspook.gif"
   },
   {
-    "url": "http://hiiamchris.com:4200",
-    "description": "swagify a still image",
-    "repository": "https://github.com/rozap/sweg.revisit",
-    "sample": "http://butt.es/revisit/sweg.gif"
-  },
-  {
     "url": "http://butt.es:8080",
     "description": "add noise to a still image",
     "sample": "http://butt.es/revisit/noisegopher.jpg"
