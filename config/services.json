@@ -3,196 +3,229 @@
     "url": "http://service-relay.revisit.link",
     "description": "random RGB land",
     "repository": "https://github.com/revisitors/revisit.service.relay",
-    "sample": "http://butt.es/revisit/random-rgb.jpg"
+    "sample": "http://butt.es/revisit/random-rgb.jpg",
+    "supports": ["jpeg", "png", "gif"]
   },
   {
     "url": "http://shielded-sands-7191.herokuapp.com/rotate",
     "description": "rotate anti-clockwise 90deg",
     "repository": "https://github.com/justinabrahms/rotate.revisit.link",
-    "sample": "http://butt.es/revisit/rotate.jpg"
+    "sample": "http://butt.es/revisit/rotate.jpg",
+    "supports": ["jpeg"]
   },
   {
     "url": "http://glitch.nothingissacred.org/clamp",
     "description": "cut color depth",
     "repository": "https://github.com/revisitors/glitcher",
-    "sample": "http://butt.es/revisit/clamp.gif"
+    "sample": "http://butt.es/revisit/clamp.gif",
+    "supports": ["jpeg", "png", "gif"]
   },
   {
     "url": "http://glitch.nothingissacred.org/glitchclamp",
     "description": "cut color depth with some random flare",
     "repository": "https://github.com/revisitors/glitcher",
-    "sample": "http://butt.es/revisit/glitchclamp.gif"
+    "sample": "http://butt.es/revisit/glitchclamp.gif",
+    "supports": ["jpeg", "png", "gif"]
   },
   {
     "url": "http://glitch.nothingissacred.org/ghost",
     "description": "ghost with a random color",
     "repository": "https://github.com/revisitors/glitcher",
-    "sample": "http://butt.es/revisit/ghost.gif"
+    "sample": "http://butt.es/revisit/ghost.gif",
+    "supports": ["jpeg", "png", "gif"]
   },
   {
     "url": "http://glitch.nothingissacred.org/glitchghost",
     "description": "ghost with random noise",
     "repository": "https://github.com/revisitors/glitcher",
-    "sample": "http://butt.es/revisit/glitchghost.gif"
+    "sample": "http://butt.es/revisit/glitchghost.gif",
+    "supports": ["jpeg", "png", "gif"]
   },
   {
     "url": "http://glitch.nothingissacred.org/solarize",
     "description": "solarize",
     "repository": "https://github.com/revisitors/glitcher",
-    "sample": "http://butt.es/revisit/solarize.gif"
+    "sample": "http://butt.es/revisit/solarize.gif",
+    "supports": ["jpeg", "png", "gif"]
   },
   {
     "url": "http://glitch.nothingissacred.org/flip",
     "description": "flip",
     "repository": "https://github.com/revisitors/glitcher",
-    "sample": "http://butt.es/revisit/flip.gif"
+    "sample": "http://butt.es/revisit/flip.gif",
+    "supports": ["jpeg", "png", "gif"]
   },
   {
     "url": "http://glitch.nothingissacred.org/redblueshift",
     "description": "redblueshift",
     "repository": "https://github.com/revisitors/glitcher",
-    "sample": "http://butt.es/revisit/redblueshift.gif"
+    "sample": "http://butt.es/revisit/redblueshift.gif",
+    "supports": ["jpeg", "png", "gif"]
   },
   {
     "url": "http://glitch.nothingissacred.org/spookify",
     "description": "a 'spooky' animation",
     "repository": "https://github.com/revisitors/glitcher",
-    "sample": "http://butt.es/revisit/spookify.gif"
+    "sample": "http://butt.es/revisit/spookify.gif",
+    "supports": ["jpeg", "png", "gif"]
   },
   {
     "url": "http://glitch.nothingissacred.org/rbspook",
     "description": "a glitchy animation",
     "repository": "https://github.com/revisitors/glitcher",
-    "sample": "http://butt.es/revisit/rbspook.gif"
+    "sample": "http://butt.es/revisit/rbspook.gif",
+    "supports": ["jpeg", "png", "gif"]
   },
   {
     "url": "http://butt.es:8080",
     "description": "add noise to a still image",
-    "sample": "http://butt.es/revisit/noisegopher.jpg"
+    "sample": "http://butt.es/revisit/noisegopher.jpg",
+    "supports": ["jpeg"]
   },
   {
     "url": "http://glitch.nothingissacred.org/grayscale",
     "description": "grayscale",
     "repository": "https://github.com/revisitors/glitcher",
-    "sample": "http://butt.es/revisit/grayscale.gif"
+    "sample": "http://butt.es/revisit/grayscale.gif",
+    "supports": ["jpeg", "png", "gif"]
   },
   {
     "url": "http://glitch.nothingissacred.org/smear",
     "description": "smear",
     "repository": "https://github.com/revisitors/glitcher",
-    "sample": "http://butt.es/revisit/smear.gif"
+    "sample": "http://butt.es/revisit/smear.gif",
+    "supports": ["jpeg", "png", "gif"]
   },
   {
     "url": "http://glitch.nothingissacred.org/smearchannel",
     "description": "smearchannel",
     "repository": "https://github.com/revisitors/glitcher",
-    "sample": "http://butt.es/revisit/smearchannel.gif"
+    "sample": "http://butt.es/revisit/smearchannel.gif",
+    "supports": ["jpeg", "png", "gif"]
   },
   {
     "url": "http://glitch.nothingissacred.org/pixelshift",
     "description": "pixelshift",
     "repository": "https://github.com/revisitors/glitcher",
-    "sample": "http://butt.es/revisit/pixelshift.gif"
+    "sample": "http://butt.es/revisit/pixelshift.gif",
+    "supports": ["jpeg", "png", "gif"]
   },
   {
     "url": "http://glitch.nothingissacred.org/rowslice",
     "description": "rowslice",
     "repository": "https://github.com/revisitors/glitcher",
-    "sample": "http://butt.es/revisit/rowslice.gif"
+    "sample": "http://butt.es/revisit/rowslice.gif",
+    "supports": ["jpeg", "png", "gif"]
   },
   {
     "url": "http://glitch.nothingissacred.org/shadow",
     "description": "shadow",
     "repository": "https://github.com/revisitors/glitcher",
-    "sample": "http://butt.es/revisit/shadow.gif"
+    "sample": "http://butt.es/revisit/shadow.gif",
+    "supports": ["jpeg", "png", "gif"]
   },
   {
     "url": "http://glitch.nothingissacred.org/aniglitch",
     "description": "randomized glitch animation",
     "repository": "https://github.com/revisitors/glitcher",
-    "sample": "http://butt.es/revisit/aniglitch.gif"
+    "sample": "http://butt.es/revisit/aniglitch.gif",
+    "supports": ["jpeg", "png", "gif"]
   },
   {
     "url": "http://downsample.joefriedl.net",
     "description" : "crappy jpeg",
     "repository": "https://github.com/grampajoe/revisit-downsample",
-    "sample": "http://butt.es/revisit/downsample.jpg"
+    "sample": "http://butt.es/revisit/downsample.jpg",
+    "supports": ["jpeg"]
   },
   {
     "url": "http://glitch2.meatcub.es:8001",
     "description": "random smiley face",
     "repository": "https://github.com/revisitors/revisit-lysergix-service",
-    "sample": "http://butt.es/revisit/smiley.png"
+    "sample": "http://butt.es/revisit/smiley.png",
+    "supports": ["jpeg"]
   },
   {
     "url": "http://revisitations.herokuapp.com/rando-rotate",
     "description": "rotate a random amount",
     "repository": "https://github.com/mferrier/revisitations",
-    "sample": "http://revisitations.herokuapp.com/rando-rotate/preview.jpg"
+    "sample": "http://revisitations.herokuapp.com/rando-rotate/preview.jpg",
+    "supports": ["jpeg"]
   },
   {
     "url": "http://glitch2.meatcub.es:8002",
     "description": "post to @revisitron twitter!",
     "repository": "https://github.com/revisitors/revisit-twitter",
-    "sample": "http://butt.es/revisit/twitter.jpeg"
+    "sample": "http://butt.es/revisit/twitter.jpeg",
+    "supports": ["jpeg", "png", "gif"]
   },
   {
     "url": "http://glitch2.meatcub.es:8003",
     "description": "post to http://chat.meatspac.es",
     "repository": "https://github.com/revisitors/revisit-meatspac",
-    "sample": "http://glitch2.meatcub.es/meatspaces.png"
+    "sample": "http://glitch2.meatcub.es/meatspaces.png",
+    "supports": ["jpeg", "png", "gif"]
   },
   {
     "url": "http://thpcod.es:8000",
     "description": "Square Shuff Shuffler",
     "repository": "https://github.com/revisitors/squareshuffle",
-    "sample": "http://thpcod.es:8000/sample.png"
+    "sample": "http://thpcod.es:8000/sample.png",
+    "supports": ["jpeg"]
   },
   {
     "url": "http://revisit.waferbaby.com/compy",
     "description": "Composite randomness",
     "repository": "https://github.com/waferbaby/revisit",
-    "sample": "http://revisit.waferbaby.com/images/compy.jpg"
+    "sample": "http://revisit.waferbaby.com/images/compy.jpg",
+    "supports": ["jpeg"]
   },
   {
     "url": "http://revisit-butt-service.herokuapp.com",
     "description": "ascii butts on 'em",
     "repository": "https://github.com/revisitors/revisit-butt-service",
-    "sample": "http://revisit-butt-service.herokuapp.com/butt-preview.png"
+    "sample": "http://revisit-butt-service.herokuapp.com/butt-preview.png",
+    "supports": ["jpeg"]
   },
   {
     "url": "http://revisit-faceblur.imakewebthings.com",
     "description": "blur faces",
     "repository": "https://github.com/imakewebthings/revisit-faceblur",
-    "sample": "http://imakewebthings.com/revisit-faceblur/preview.jpg"
+    "sample": "http://imakewebthings.com/revisit-faceblur/preview.jpg",
+    "supports": ["jpeg"]
   },
   {
     "url": "http://glitch.bren.zone",
     "description": "slice vertically, then shuffle 'em up",
     "respository": "https://github.com/brenna/glitch-shuffle",
-    "sample": "http://bren.zone/cat-shuffle.png"
+    "sample": "http://bren.zone/cat-shuffle.png",
+    "supports": ["jpeg"]
   },
   {
     "url": "http://ricky.expert:8000",
     "description": "add a raving glitchy megaman to 'em",
-    "sample": "http://ricky.expert:8000/grumpy.gif"
+    "sample": "http://ricky.expert:8000/grumpy.gif",
+    "supports": ["jpeg", "png", "gif"]
   },
   {
     "url": "http://memeify.jrhodes.me:8000",
     "description": "meatchat-fueled markov memeification",
     "repository": "https://github.com/jasonrhodes/meatspace-markov-memeify",
-    "sample": "http://memeify.jrhodes.me:8000/memeify-sample.jpg"
+    "sample": "http://memeify.jrhodes.me:8000/memeify-sample.jpg",
+    "supports": ["jpeg"]
   },
   {
     "url": "http://revisit.waferbaby.com/swears",
     "description": "OMG, so rude!",
     "repository": "https://github.com/waferbaby/revisit",
-    "sample": "http://revisit.waferbaby.com/images/swears.jpg"
+    "sample": "http://revisit.waferbaby.com/images/swears.jpg",
+    "supports": ["jpeg"]
   },
   {
     "url": "http://technodrome.brokenspork.net/trippyshift",
     "description": "overlay an offset copy and make it trippy",
     "repository": "https://github.com/Flet/technodrome",
-    "sample": "http://technodrome.brokenspork.net/trippyshift/sample.jpg"
+    "sample": "http://technodrome.brokenspork.net/trippyshift/sample.jpg",
+    "supports": ["jpeg"]
   }
 ]
