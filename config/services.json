@@ -233,5 +233,12 @@
     "repository": "https://github.com/Flet/technodrome",
     "sample": "http://technodrome.brokenspork.net/trippyshift/sample.jpg",
     "supports": ["jpeg"]
+  },
+  {
+    "url": "http://glitch2.meatcub.es:4200/",
+    "description": "tenderly lay a swag gif upon an image",
+    "repository": "https://github.com/rozap/sweg.revisit",
+    "sample": "https://camo.githubusercontent.com/46153fce14e4500db295c8d75e1481447b16c5df/687474703a2f2f692e696d6775722e636f6d2f67707a7133794e2e676966",
+    "supports": ["jpeg", "png"]
   }
 ]
