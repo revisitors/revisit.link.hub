@@ -255,5 +255,12 @@
     "repository": "https://github.com/rozap/sweg.revisit",
     "sample": "https://camo.githubusercontent.com/46153fce14e4500db295c8d75e1481447b16c5df/687474703a2f2f692e696d6775722e636f6d2f67707a7133794e2e676966",
     "supports": ["jpeg", "png"]
+  },
+  {
+    "url": "http://revisit-22054.onmodulus.net",
+    "description": "NOP",
+    "repository": "https://github.com/byronhulcher/node-revisit-nop",
+    "sample": "http://i.imgur.com/NfMj1yg.gif",
+    "supports": ["jpeg", "png","gif"]
   }
 ]
