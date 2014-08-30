@@ -77,6 +77,20 @@
     "supports": ["jpeg", "png", "gif"]
   },
   {
+    "url": "http://glitch.nothingissacred.org/superghost",
+    "description": "ghost with random memory sectors",
+    "repository": "https://github.com/revisitors/glitcher",
+    "sample": "http://glitch.nothingissacred.org/img/superghost.gif",
+    "supports": ["jpeg", "png", "gif"]
+  },
+  {
+    "url": "http://glitch.nothingissacred.org/interleave",
+    "description": "interlace an image with ???",
+    "repository": "https://github.com/revisitors/glitcher",
+    "sample": "http://glitch.nothingissacred.org/img/interleave.gif",
+    "supports": ["jpeg", "png", "gif"]
+  },
+  {
     "url": "http://butt.es:8080",
     "description": "add noise to a still image",
     "sample": "http://butt.es/revisit/noisegopher.jpg",
