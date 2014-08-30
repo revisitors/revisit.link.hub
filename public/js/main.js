@@ -12,6 +12,7 @@ var form = $('form');
 var loading = $('#loading');
 var fileAdded = false;
 var token = $('.token');
+var imgurKey = window.imgurKey;
 
 var iv = new ImageView({
   quality: 0.5,
@@ -104,4 +105,28 @@ body.on('click', '#reset', function () {
   create.removeClass('on');
   $('#preview').empty();
   $('.content').val('');
+});
+
+body.on('click', '#imgur', function() {
+  var authorization = 'Client-ID ' + imgurKey;
+  var imageUri = $('.result img').attr('src').replace(/^data:[^,]+,/, '');
+  $.ajax({
+    url: 'https://api.imgur.com/3/image',
+    method: 'POST',
+    headers: {
+      Authorization: authorization,
+      Accept: 'application/json'
+    },
+    data: {
+      image: imageUri,
+      type: 'base64'
+    },
+    success: function(result) {
+      var id = result.data.id;
+      window.location = 'https://imgur.com/gallery/' + id;
+    },
+    error: function(error) {
+      console.log(error.responseJSON.data.error)
+    }
+  });
 });
