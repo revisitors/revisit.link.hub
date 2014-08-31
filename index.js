@@ -42,7 +42,7 @@ var routes = [
     path: '/service',
     config: {
       payload: {
-        maxBytes: 2500000
+        maxBytes: 3000000
       },
       handler: services.add
     }
