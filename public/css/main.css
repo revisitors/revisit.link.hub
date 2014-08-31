@@ -369,6 +369,14 @@ section h3 {
   width: 300px;
 }
 
+.status-message-row {
+  margin: 20px 0;
+}
+
+.status-message-row a {
+  font-size: 1.5rem;
+}
+
 /* ------------------------------ Services Added ------------------------------ */
 
 .services-added {

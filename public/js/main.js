@@ -112,7 +112,9 @@ body.on('click', '#imgur', function (e) {
   var imgurBtn = $('#imgur');
   var imgurKey = imgurBtn.data('imgurKey');
   var authorization = 'Client-ID ' + imgurKey;
-  var imageUri = $('.result img').attr('src').replace(/^data:[^,]+,/, '');
+  var imageURI = $('.result img').attr('src').replace(/^data:[^,]+,/, '');
+
+  imgurBtn.attr('disabled', true);
 
   $.ajax('https://api.imgur.com/3/image', {
     method: 'POST',
@@ -121,20 +123,21 @@ body.on('click', '#imgur', function (e) {
       Accept: 'application/json'
     },
     data: {
-      image: imageUri,
+      image: imageURI,
       type: 'base64'
     }
   }).done(function (result) {
-      var id = result.data.id;
-      statusRow.html('<a href="https://imgur.com/gallery/' + id + '">Image Uploaded</a>');
-    })
-    .error(function (result) {
-      var message = result.responseJSON.data.error || 'Error: ' + result.status + ': ' + result.statusText;
-      statusRow.html('<div>' + message + '</div>');
-    })
-    .always(function () {
-      imgurBtn.removeAttr('disabled');
-    });
+    var id = result.data.id;
 
-  imgurBtn.attr('disabled', true);
+    statusRow.html('<a href="https://imgur.com/gallery/' + id +
+      '" target="_blank">https://imgur.com/gallery/' + id + '</a>');
+  })
+  .error(function (result) {
+    var message = result.responseJSON.data.error || 'Error: ' +
+      result.status + ': ' + result.statusText;
+    statusRow.html('<div>' + message + '</div>');
+  })
+  .always(function () {
+    imgurBtn.removeAttr('disabled');
+  });
 });
