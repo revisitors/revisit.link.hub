@@ -1,5 +1,12 @@
 [
   {
+    "url": "http://revisit.svs.ncolorpalett.es/cycled-gameboy",
+    "description": "color cycled gameboy palette",
+    "repository": "https://github.com/kirbysayshi/revisit-ncolorpalette-service",
+    "sample": "http://revisit.svs.ncolorpalett.es/kirby_50.png",
+    "supports": ["jpeg", "png", "gif"]
+  },
+  {
     "url": "http://service-relay.revisit.link",
     "description": "random RGB land",
     "repository": "https://github.com/revisitors/revisit.service.relay",
