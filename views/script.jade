@@ -3,9 +3,11 @@ extend layout
 block content
   section.final
     if result
+      .status-message-row
+
       .button-row
         a.button(href='/#{token}/play', class='replay') Replay
-        a.button(href='#' id='imgur') Post to imgur
+        button(class='button', id='imgur', data-imgur-key='#{imgurKey}') Post to imgur
         a(class='tumblr', href='http://revisitron.tumblr.com', target='_blank') Think this image is awesome?<br/>Submit it to Tumblr!
 
       div.result

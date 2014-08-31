@@ -12,7 +12,7 @@ var form = $('form');
 var loading = $('#loading');
 var fileAdded = false;
 var token = $('.token');
-var imgurKey = window.imgurKey;
+var statusRow = $('.status-message-row');
 
 var iv = new ImageView({
   quality: 0.5,
@@ -107,11 +107,14 @@ body.on('click', '#reset', function () {
   $('.content').val('');
 });
 
-body.on('click', '#imgur', function() {
+body.on('click', '#imgur', function (e) {
+  e.preventDefault();
+  var imgurBtn = $('#imgur');
+  var imgurKey = imgurBtn.data('imgurKey');
   var authorization = 'Client-ID ' + imgurKey;
   var imageUri = $('.result img').attr('src').replace(/^data:[^,]+,/, '');
-  $.ajax({
-    url: 'https://api.imgur.com/3/image',
+
+  $.ajax('https://api.imgur.com/3/image', {
     method: 'POST',
     headers: {
       Authorization: authorization,
@@ -120,13 +123,18 @@ body.on('click', '#imgur', function() {
     data: {
       image: imageUri,
       type: 'base64'
-    },
-    success: function(result) {
-      var id = result.data.id;
-      window.location = 'https://imgur.com/gallery/' + id;
-    },
-    error: function(error) {
-      console.log(error.responseJSON.data.error)
     }
-  });
+  }).done(function (result) {
+      var id = result.data.id;
+      statusRow.html('<a href="https://imgur.com/gallery/' + id + '">Image Uploaded</a>');
+    })
+    .error(function (result) {
+      var message = result.responseJSON.data.error || 'Error: ' + result.status + ': ' + result.statusText;
+      statusRow.html('<div>' + message + '</div>');
+    })
+    .always(function () {
+      imgurBtn.removeAttr('disabled');
+    });
+
+  imgurBtn.attr('disabled', true);
 });
