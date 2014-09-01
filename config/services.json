@@ -163,7 +163,7 @@
     "description": "random smiley face",
     "repository": "https://github.com/revisitors/revisit-lysergix-service",
     "sample": "http://butt.es/revisit/smiley.png",
-    "supports": ["jpeg"]
+    "supports": ["jpeg", "png", "gif"]
   },
   {
     "url": "http://revisitations.herokuapp.com/rando-rotate",
