@@ -230,9 +230,9 @@
   },
   {
     "url": "http://ricky.expert:8000",
-    "description": "raving glitchy MegaMan™!",
+    "description": "random glitchy MegaMan™!",
     "respository": "https://github.com/rmillr/glitch-megaman",
-    "sample": "http://ricky.expert:8000/grumpy.gif",
+    "sample": "http://ricky.expert:8000/megaman.png",
     "supports": ["jpeg", "png", "gif"]
   },
   {
