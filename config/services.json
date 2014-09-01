@@ -3,7 +3,7 @@
     "url": "http://revisit.svs.ncolorpalett.es/cycled-gameboy",
     "description": "color cycled gameboy palette",
     "repository": "https://github.com/kirbysayshi/revisit-ncolorpalette-service",
-    "sample": "http://revisit.svs.ncolorpalett.es/kirby_50.png",
+    "sample": "http://revisit.svs.ncolorpalett.es/kirby_50.gif",
     "supports": ["jpeg", "png", "gif"]
   },
   {
