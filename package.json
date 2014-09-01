@@ -25,7 +25,7 @@
     "ws": "^0.4.32",
     "gm": "~1.16.0",
     "data-uri-to-buffer": "~0.0.3",
-    "gif-reducer": "~2.0.1"
+    "gif-reducer": "~2.1.0"
   },
   "devDependencies": {
     "nodemon": "~1.2.1",
