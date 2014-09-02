@@ -262,5 +262,12 @@
     "repository": "https://github.com/rozap/sweg.revisit",
     "sample": "https://camo.githubusercontent.com/46153fce14e4500db295c8d75e1481447b16c5df/687474703a2f2f692e696d6775722e636f6d2f67707a7133794e2e676966",
     "supports": ["jpeg", "png"]
-  }
+  },
+  {
+    "url": "http://swartzcr.the-nsa.org/glitch",
+    "description": "glitch RGB in rows based on the latest meatspac tweet",
+    "repository": "https://github.com/swartzcr/glitch",
+    "sample": "http://catplanet.cat/meatspac/profile-myglitch.jpeg",
+    "supports": ["jpeg", "png", "gif"]
+    }
 ]
