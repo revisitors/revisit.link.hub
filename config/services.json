@@ -254,7 +254,7 @@
     "description": "overlay an offset copy and make it trippy",
     "repository": "https://github.com/Flet/technodrome",
     "sample": "http://technodrome.brokenspork.net/trippyshift/sample.jpg",
-    "supports": ["jpeg"]
+    "supports": ["jpeg", "png"]
   },
   {
     "url": "http://glitch2.meatcub.es:4200/",
