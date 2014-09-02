@@ -554,6 +554,14 @@ section.step.no-icon::after {
   opacity: .66;
 }
 
+.service-list-item small {
+  float: right;
+  font-size: 1em;
+  font-weight: 700;
+  font-variant: small-caps;
+  margin-right: 7px;
+}
+
 .service-list-item .description {
   padding: 15px;
   background: #F7F7F7;
@@ -570,6 +578,10 @@ section.step.no-icon::after {
 
 .service-list-item.online:hover {
   background-color: #88fbdc;
+}
+
+.service-list-item.online.supports {
+  background-color: #c0feca;
 }
 
 .service-list-item.online .image-preview,
