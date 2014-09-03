@@ -269,5 +269,40 @@
     "repository": "https://github.com/swartzcr/glitch",
     "sample": "http://catplanet.cat/meatspac/profile-myglitch.jpeg",
     "supports": ["jpeg", "png", "gif"]
-    }
+  },
+  {
+    "url": "http://revisit-gif-max.herokuapp.com",
+    "description": "gif compositing using the brightest pixel over time",
+    "repository": "https://github.com/imakewebthings/revisit-gif-composites",
+    "sample": "http://imakewebthings.com/revisit-gif-composites/previews/revisit-max.gif",
+    "supports": ["gif"]
+  },
+  {
+    "url": "http://revisit-gif-min.herokuapp.com",
+    "description": "gif compositing using the darkest pixel over time",
+    "repository": "https://github.com/imakewebthings/revisit-gif-composites",
+    "sample": "http://imakewebthings.com/revisit-gif-composites/previews/revisit-min.gif",
+    "supports": ["gif"]
+  },
+  {
+    "url": "http://revisit-gif-tracer.herokuapp.com",
+    "description": "motion ghost your gifs",
+    "repository": "https://github.com/imakewebthings/revisit-gif-composites",
+    "sample": "http://imakewebthings.com/revisit-gif-composites/previews/revisit-tracer.gif",
+    "supports": ["gif"]
+  },
+  {
+    "url": "http://revisit-gif-trip.herokuapp.com",
+    "description": "multiply gif colors over time",
+    "repository": "https://github.com/imakewebthings/revisit-gif-composites",
+    "sample": "http://imakewebthings.com/revisit-gif-composites/previews/revisit-trip.gif",
+    "supports": ["gif"]
+  },
+  {
+    "url": "http://revisit-gif-meatmotion.herokuapp.com",
+    "description": "turn moving gif pixels meatspace pink",
+    "repository": "https://github.com/imakewebthings/revisit-gif-composites",
+    "sample": "http://imakewebthings.com/revisit-gif-composites/previews/revisit-meatmotion.gif",
+    "supports": ["gif"]
+  }
 ]
