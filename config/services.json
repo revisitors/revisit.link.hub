@@ -230,9 +230,9 @@
   },
   {
     "url": "http://ricky.expert:8000",
-    "description": "random glitchy MegaMan™!",
+    "description": "Add running MegaMan™!",
     "respository": "https://github.com/rmillr/glitch-megaman",
-    "sample": "http://ricky.expert:8000/megaman.png",
+    "sample": "http://ricky.expert:8000/megaman.gif",
     "supports": ["jpeg", "png", "gif"]
   },
   {
