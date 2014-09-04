@@ -309,7 +309,7 @@
     "url": "http://fourtonfish.com/imgapi/transposer1000",
     "description": "slice, turn some of the slices upside down and add noise",
     "repository": "https://github.com/fourtonfish/transposer1000",
-    "sample": "https://raw.githubusercontent.com/fourtonfish/transposer1000/master/example.jpg",
+    "sample": "https://raw.githubusercontent.com/fourtonfish/transposer1000/master/static/images/thumbnail_60.jpg",
     "supports": ["jpeg", "png"]
   }
 ]
