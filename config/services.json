@@ -313,6 +313,13 @@
     "supports": ["gif"]
   },
   {
+    "url": "http://revisit-enhance.herokuapp.com/enhance",
+    "description": "enhance",
+    "repository": "https://github.com/imakewebthings/revisit-enhance",
+    "sample": "http://imakewebthings.com/revisit-enhance/examples/enhance.gif",
+    "supports": ["jpeg", "png", "gif"]
+  },
+  {
     "url": "http://fourtonfish.com/imgapi/transposer1000",
     "description": "slice, turn some of the slices upside down and add noise",
     "repository": "https://github.com/fourtonfish/transposer1000",
