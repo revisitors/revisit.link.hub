@@ -584,7 +584,8 @@ section.step.no-icon::after {
   cursor: pointer;
 }
 
-.service-list-item.online:hover {
+.service-list-item.online:hover,
+.service-list-item.online.supports:hover {
   background-color: #88fbdc;
 }
 
