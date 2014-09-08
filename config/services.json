@@ -278,6 +278,13 @@
     "supports": ["jpeg", "png", "gif"]
   },
   {
+    "url": "http://ricky.expert:8001",
+    "description": "Apply random bitmapData filters",
+    "respository": "https://github.com/rmillr/glitch-bitmapData",
+    "sample": "http://ricky.expert:8001/lsd-colorize.gif",
+    "supports": ["jpeg", "png", "gif"]
+  },
+  {
     "url": "http://memeify.jrhodes.me:8000",
     "description": "meatchat-fueled markov memeification",
     "repository": "https://github.com/jasonrhodes/meatspace-markov-memeify",
