@@ -1,5 +1,40 @@
 [
   {
+    "url": "http://gifplay.jrhodes.me:8020/shuffle",
+    "description": "GIFPLAY // Shuffle -> shuffle GIF frames",
+    "repository": "https://github.com/jasonrhodes/revisit-gifplay",
+    "sample": "http://gifplay.jrhodes.me:8020/icon.gif",
+    "supports": ["gif"]
+  },
+  {
+    "url": "http://gifplay.jrhodes.me:8020/pingpong",
+    "description": "GIFPLAY // PingPong -> repeat GIF backwards after forwards, creating a loop",
+    "repository": "https://github.com/jasonrhodes/revisit-gifplay",
+    "sample": "http://gifplay.jrhodes.me:8020/icon.gif",
+    "supports": ["gif"]
+  },
+  {
+    "url": "http://gifplay.jrhodes.me:8020/reverse",
+    "description": "GIFPLAY // Reverse -> reverse GIF frames",
+    "repository": "https://github.com/jasonrhodes/revisit-gifplay",
+    "sample": "http://gifplay.jrhodes.me:8020/icon.gif",
+    "supports": ["gif"]
+  },
+  {
+    "url": "http://gifplay.jrhodes.me:8020/slowmo",
+    "description": "GIFPLAY // Slowmo -> delay every 3rd frame for slow motion effect",
+    "repository": "https://github.com/jasonrhodes/revisit-gifplay",
+    "sample": "http://gifplay.jrhodes.me:8020/icon.gif",
+    "supports": ["gif"]
+  },
+  {
+    "url": "http://gifplay.jrhodes.me:8020/bouncy",
+    "description": "GIFPLAY // Bouncy -> 1,2,1,3,1,4 creating a bounce effect",
+    "repository": "https://github.com/jasonrhodes/revisit-gifplay",
+    "sample": "http://gifplay.jrhodes.me:8020/icon.gif",
+    "supports": ["gif"]
+  },
+  {
     "url": "http://votechain.info:8080",
     "description": "3D lenses - RED and BLUE split screen filter",
     "repository": "https://github.com/andrewdamelio/glitch-3D-lenses",
@@ -243,6 +278,13 @@
     "supports": ["jpeg", "png", "gif"]
   },
   {
+    "url": "http://ricky.expert:8001",
+    "description": "Apply random bitmapData filters",
+    "respository": "https://github.com/rmillr/glitch-bitmapData",
+    "sample": "http://ricky.expert:8001/lsd-colorize.gif",
+    "supports": ["jpeg", "png", "gif"]
+  },
+  {
     "url": "http://memeify.jrhodes.me:8000",
     "description": "meatchat-fueled markov memeification",
     "repository": "https://github.com/jasonrhodes/meatspace-markov-memeify",
@@ -311,6 +353,13 @@
     "repository": "https://github.com/imakewebthings/revisit-gif-composites",
     "sample": "http://imakewebthings.com/revisit-gif-composites/previews/revisit-meatmotion.gif",
     "supports": ["gif"]
+  },
+  {
+    "url": "http://revisit-enhance.herokuapp.com/enhance",
+    "description": "enhance",
+    "repository": "https://github.com/imakewebthings/revisit-enhance",
+    "sample": "http://imakewebthings.com/revisit-enhance/examples/enhance.gif",
+    "supports": ["jpeg", "png", "gif"]
   },
   {
     "url": "http://fourtonfish.com/imgapi/transposer1000",
