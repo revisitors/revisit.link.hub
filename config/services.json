@@ -141,15 +141,15 @@
   },
   {
     "url": "http://butt.es:8080",
-    "description": "add noise to a still image",
+    "description": "add noise to an image",
     "sample": "http://butt.es/revisit/noisegopher.jpg",
-    "supports": ["jpeg"]
+    "supports": ["jpeg", "png", "gif"]
   },
   {
     "url": "http://butt.es:8081",
     "description": "random blend effects",
     "sample": "http://butt.es/revisit/noisegopher.jpg",
-    "supports": ["jpeg"]
+    "supports": ["jpeg", "png", "gif"]
   },
   {
     "url": "http://glitch.nothingissacred.org/grayscale",
