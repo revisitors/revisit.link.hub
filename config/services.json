@@ -1,37 +1,37 @@
 [
   {
     "url": "http://gifplay.jrhodes.me:8020/shuffle",
-    "description": "GIFPLAY // Shuffle -> shuffle GIF frames",
+    "description": "GifPlay Shuffle: shuffle GIF frames",
     "repository": "https://github.com/jasonrhodes/revisit-gifplay",
-    "sample": "http://gifplay.jrhodes.me:8020/icon.gif",
+    "sample": "http://gifplay.jrhodes.me:8020/examples/shuffle.gif",
     "supports": ["gif"]
   },
   {
     "url": "http://gifplay.jrhodes.me:8020/pingpong",
-    "description": "GIFPLAY // PingPong -> repeat GIF backwards after forwards, creating a loop",
+    "description": "GifPlay PingPong: repeat GIF back and forth, creating a loop",
     "repository": "https://github.com/jasonrhodes/revisit-gifplay",
-    "sample": "http://gifplay.jrhodes.me:8020/icon.gif",
+    "sample": "http://gifplay.jrhodes.me:8020/examples/pingpong.gif",
     "supports": ["gif"]
   },
   {
     "url": "http://gifplay.jrhodes.me:8020/reverse",
-    "description": "GIFPLAY // Reverse -> reverse GIF frames",
+    "description": "GifPlay Reverse: reverse GIF frames",
     "repository": "https://github.com/jasonrhodes/revisit-gifplay",
-    "sample": "http://gifplay.jrhodes.me:8020/icon.gif",
+    "sample": "http://gifplay.jrhodes.me:8020/examples/reverse.gif",
     "supports": ["gif"]
   },
   {
     "url": "http://gifplay.jrhodes.me:8020/slowmo",
-    "description": "GIFPLAY // Slowmo -> delay every 3rd frame for slow motion effect",
+    "description": "GifPlay Slowmo: delay every 3rd frame for slow motion effect",
     "repository": "https://github.com/jasonrhodes/revisit-gifplay",
-    "sample": "http://gifplay.jrhodes.me:8020/icon.gif",
+    "sample": "http://gifplay.jrhodes.me:8020/examples/slowmo.gif",
     "supports": ["gif"]
   },
   {
     "url": "http://gifplay.jrhodes.me:8020/bouncy",
-    "description": "GIFPLAY // Bouncy -> 1,2,1,3,1,4 creating a bounce effect",
+    "description": "GifPlay Bouncy: 1,2,1,3,1,4 creating a bounce effect",
     "repository": "https://github.com/jasonrhodes/revisit-gifplay",
-    "sample": "http://gifplay.jrhodes.me:8020/icon.gif",
+    "sample": "http://gifplay.jrhodes.me:8020/examples/bouncy.gif",
     "supports": ["gif"]
   },
   {
