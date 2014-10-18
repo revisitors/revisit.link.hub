@@ -1,5 +1,12 @@
 [
   {
+    "url": "http://technodrome.brokenspork.net/rando",
+    "description": "Random!",
+    "repository": "https://github.com/Flet/technodrome",
+    "sample": "http://technodrome.brokenspork.net/rando/sample.jpg",
+    "supports": ["jpeg", "png", "gif"]
+  },
+  {
     "url": "http://gifplay.jrhodes.me:8020/shuffle",
     "description": "GifPlay Shuffle: shuffle GIF frames",
     "repository": "https://github.com/jasonrhodes/revisit-gifplay",
